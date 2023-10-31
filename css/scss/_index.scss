@@ -89,5 +89,33 @@ main{
     }
   }
   /* // slogan */
+
+  /* 파트너사 */
+  .partners {
+    text-align: center;
+
+    .title {
+      @include title-md;
+      margin-bottom: 3rem;
+    }
+    .desc {
+      @include text-lg;
+    }
+
+    .partners-logo {
+      margin-top: 7rem;
+      display: grid;
+      grid-template-columns: repeat(7, minmax(22rem, auto));
+      gap: 3rem;
+
+      .logo-item {
+        width: 22rem;
+        height: 9rem;
+        background-color: $gray-100-color;
+      }
+    }
+  }
+
+  /* // 파트너사 */
 }
 

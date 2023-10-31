@@ -388,6 +388,8 @@ main {
   /* // what we do */
   /* slogan */
   /* // slogan */
+  /* 파트너사 */
+  /* // 파트너사 */
 }
 main .inner {
   padding: 24rem 10rem;
@@ -479,4 +481,31 @@ main .slogan .inner span {
   line-height: 1.6;
   letter-spacing: -0.02rem;
   color: #fff;
+}
+main .partners {
+  text-align: center;
+}
+main .partners .title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.064rem;
+  margin-bottom: 3rem;
+}
+main .partners .desc {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.02rem;
+}
+main .partners .partners-logo {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(22rem, auto));
+  gap: 3rem;
+}
+main .partners .partners-logo .logo-item {
+  width: 22rem;
+  height: 9rem;
+  background-color: #f8f8fa;
 }/*# sourceMappingURL=styles.css.map */
