@@ -96,18 +96,3 @@
   letter-spacing: -0.064rem;
   @content;
 }
-
-@mixin move-line {
-  animation: moveto 3s linear infinite;
-  // transform-origin: 50% 50%;
-
-  @keyframes moveto {
-    0% {
-      offset-distance: 0%;
-    }
-    100% {
-      offset-distance: 100%;
-    }
-    @content;
-  }
-}

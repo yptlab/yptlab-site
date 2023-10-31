@@ -1,0 +1,98 @@
+/* 사업영역 스타일시트 */
+@import "variables";
+@import "mixins";
+
+main {
+  .business-title {
+    width: 100%;
+    margin: 0 auto;
+
+    .title {
+      @include title-md;
+      padding: $margin-height-large 0 4rem;
+      text-align: center;
+    }
+
+    nav {
+      border-top: 0.1rem solid $gray-200-color;
+      border-bottom: 0.1rem solid $gray-200-color;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .business-link {
+        list-style: none;
+        width: 8.5rem;
+        height: 8rem;
+
+        a {
+          @include text-lg;
+          color: $gray-600-color;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 8rem;
+          cursor: pointer;
+
+          &:hover,
+          &.active {
+            font-weight: 700;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .reason-wrap {
+    .inner {
+      text-align: center;
+      padding: $margin-height-large calc($margin-width-large * 4);
+
+      .mini-title {
+        @include title-2xs;
+        color: $primary-color;
+        margin-bottom: 3rem;
+      }
+
+      .reason {
+        &:not(:last-child) {
+          margin-bottom: $margin-height-large;
+        }
+        .title {
+          @include title-md;
+          margin-bottom: 3rem;
+        }
+        .desc {
+          @include text-lg;
+          color: $gray-800-color;
+        }
+
+        img {
+          margin-top: 12rem;
+        }
+      }
+
+      #curriculum {
+        position: relative;
+
+        .desc-wrap {
+          position: absolute;
+          text-align: left;
+          right: 8%;
+          bottom: 22%;
+
+          .desc {
+            &:first-child {
+              margin-bottom: 3rem;
+            }
+          }
+        }
+        img {
+          margin-top: 6rem;
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,8 @@ body {
 
 /* header */
 header {
+  
+  
   .inner {
     z-index: 999;
     position: fixed;
@@ -36,12 +38,19 @@ header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-
+    
+    transition: transform 0.3s ease;
+    --webkit-transform: all 0.3s ease;
     // background-color: #333;
+    
+    &.hide {
+      // 헤더 숨길때
+      transform: translateY(-100%);
+    }
     .logo {
       width: 12.5rem;
       height: 3rem;
-      background: url(../../img/logo_white.png) no-repeat left/contain;
+      background: url(../../img/logo_black.png) no-repeat left/contain;
       transition: background 0.6s ease;
       --webkit-transform: background 0.6s ease;
 
@@ -66,7 +75,7 @@ header {
 
         .line {
           display: block;
-          background-color: $white-color;
+          background-color: $black-color;
           width: 100%;
           height: 0.25rem;
           position: absolute;
@@ -94,6 +103,7 @@ header {
       }
     }
   }
+
   .menu {
     position: fixed;
     visibility: hidden;
