@@ -264,7 +264,7 @@ footer .company .sns_link {
 }
 footer .company .sns_link a {
   border-radius: 50%;
-  border: solid 1px #888;
+  border: solid 0.1rem #888;
   cursor: pointer;
   height: 7rem;
   width: 7rem;
@@ -359,7 +359,7 @@ footer .goTop {
   justify-content: center;
   width: 5rem;
   height: 5rem;
-  border: 1px solid #888;
+  border: 0.1rem solid #888;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -384,6 +384,8 @@ footer .goTop span {
 /* 트랜지션(transition) */
 /* 폰트 스타일(size, weight, line-height...) */
 main {
+  /* visual */
+  /* // visual */
   /* what we do */
   /* // what we do */
   /* slogan */
@@ -393,6 +395,92 @@ main {
 }
 main .inner {
   padding: 24rem 10rem;
+}
+main .visual {
+  position: relative;
+}
+main .visual .swvisual-control {
+  position: absolute;
+  bottom: 14rem;
+  left: 7rem;
+  z-index: 9;
+}
+main .visual .swvisual {
+  width: 100%;
+  height: 100vh;
+}
+main .visual .swvisual .swiper-slide {
+  overflow: hidden;
+}
+main .visual .swvisual .swiper-slide .inner {
+  padding: 10rem 8rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title {
+  position: relative;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title .title {
+  font-size: 9.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.192rem;
+  line-height: 1.2;
+  color: #fff;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-1 .title-1, main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-3 .title-1 {
+  padding-left: 14.8rem;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-1 .title-3, main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-3 .title-3 {
+  padding-left: 23.4rem;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-2 .title-1,
+main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-2 .title-2 {
+  padding-left: 14.8rem;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title.title-wrap-2 .title-3 {
+  padding-left: 23.4rem;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title .line {
+  position: absolute;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title .line.line-1 {
+  width: 21.4rem;
+  right: 4%;
+  bottom: 45%;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title .line.line-2 {
+  width: 11.6rem;
+  top: 16%;
+  left: 0%;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-title .line.line-3 {
+  width: 14.8rem;
+  right: 25%;
+  bottom: 13%;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-desc {
+  margin-bottom: 2.2rem;
+}
+main .visual .swvisual .swiper-slide .inner .swvisual-desc .desc {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.024rem;
+  color: #fff;
+}
+main .visual .swvisual .swiper-slide video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .what {
   position: relative;
@@ -449,7 +537,7 @@ main .what .inner .item-wrap .item .item-tag li {
   height: 6rem;
   width: 100%;
   line-height: 6rem;
-  border-bottom: 1px solid #eeeef0;
+  border-bottom: 0.1rem solid #eeeef0;
   padding-left: 0.6rem;
 }
 main .slogan {

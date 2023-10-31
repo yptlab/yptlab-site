@@ -1,3 +1,21 @@
+// (시작) 메인비주얼 swiper
+let swVisual = new Swiper(".swvisual", {
+  effect: "fade",
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 1000000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.pagination',
+    clickable : true,  // 버튼 클릭 여부
+    type : 'bullets',
+  }
+});
+
+
+// (끝) 메인비주얼 swiper
 
 // (시작) 파트너사 로고 json 가져오기
 const $partnersWrapper = document.querySelector(".partners-logo");

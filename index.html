@@ -101,10 +101,30 @@
     <main>
       <!-- 메인비주얼 -->
       <section class="visual">
+        <!-- 슬라이드 컨트롤러 -->
+        <div class="swvisual-control">
+          <!-- pagination -->
+          <div class="pagination sw-page"></div>
+        </div>
+        <!-- // 슬라이드 컨트롤러 -->
         <!-- 영상 스와이퍼 -->
         <div class="swiper swvisual">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
+              <div class="inner">
+                <!-- 슬라이드 타이틀 -->
+                <div class="swvisual-title title-wrap-1">
+                  <h2 class="title title-1">We provide a design</h2>
+                  <h2 class="title title-2">that fully expresses</h2>
+                  <h2 class="title title-3">thoughts and dreams</h2>
+                  <img src="./img/main_title_1.png" alt="타이틀 라인" class="line line-1">
+                </div>
+                <!-- 슬라이드 설명글 -->
+                <div class="swvisual-desc">
+                  <p class="desc desc-1">우리는 생각과 꿈을 온전히</p>
+                  <p class="desc desc-2">표현할 수 있는 디자인을 제공합니다</p>
+                </div>
+              </div>
               <video
                 src="img/main_bg_1.mp4"
                 muted
@@ -114,6 +134,22 @@
               ></video>
             </div>
             <div class="swiper-slide">
+              <div class="inner">
+                <!-- 슬라이드 타이틀 -->
+                <div class="swvisual-title title-wrap-2">
+                  <h2 class="title title-1">The most important task</h2>
+                  <h2 class="title title-2">for us is to</h2>
+                  <h2 class="title title-3">design the best</h2>
+                  <img src="./img/main_title_2.png" alt="타이틀 라인" class="line line-2">
+                </div>
+                <!-- 슬라이드 설명글 -->
+                <div class="swvisual-desc">
+                  <p class="desc desc-1">
+                    최선을 도출할 수 있는 디자인을 하는 것이
+                  </p>
+                  <p class="desc desc-2">우리의 최우선 과제입니다</p>
+                </div>
+              </div>
               <video
                 src="img/main_bg_2.mp4"
                 muted
@@ -123,6 +159,20 @@
               ></video>
             </div>
             <div class="swiper-slide">
+              <div class="inner">
+                <!-- 슬라이드 타이틀 -->
+                <div class="swvisual-title title-wrap-3">
+                  <h2 class="title title-1">The best moment for</h2>
+                  <h2 class="title title-2">a customer is the best result</h2>
+                  <h2 class="title title-3">we make</h2>
+                  <img src="./img/main_title_3.png" alt="타이틀 라인" class="line line-3">
+                </div>
+                <!-- 슬라이드 설명글 -->
+                <div class="swvisual-desc">
+                  <p class="desc desc-1">고객의 최고의 순간이</p>
+                  <p class="desc desc-2">우리가 만드는 최고의 결과입니다</p>
+                </div>
+              </div>
               <video
                 src="img/main_bg_3.mp4"
                 muted
@@ -134,28 +184,6 @@
           </div>
         </div>
         <!-- // 영상 스와이퍼 -->
-
-        <!-- 슬라이드 컨트롤러 -->
-        <div class="swvisual-control">
-          <div class="inner">
-            <!-- 슬라이드 타이틀 -->
-            <div class="swvisual-title title-wrap-1">
-              <h2 class="title-1">We provide a design</h2>
-              <h2 class="title-2">that fully expresses</h2>
-              <h2 class="title-3">thoughts and dreams</h2>
-            </div>
-            <!-- 슬라이드 설명글 -->
-            <div class="swiper-desc">
-              <span class="desc-1">우리는 생각과 꿈을 온전히</span>
-              <span class="desc-2">표현할 수 있는 디자인을 제공합니다</span>
-            </div>
-            <!-- pagination -->
-            <div class="sw-promotion-control">
-              <div class="pagination sw-promotion-pg"></div>
-            </div>
-          </div>
-        </div>
-        <!-- // 슬라이드 컨트롤러 -->
       </section>
       <!-- // 메인비주얼 -->
 
@@ -337,6 +365,7 @@
     </footer>
     <!-- // 푸터 -->
     <!-- // 전체레이아웃 -->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
   </body>

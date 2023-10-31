@@ -259,7 +259,7 @@ footer {
 
       a {
         border-radius: 50%;
-        border: solid 1px $gray-600-color;
+        border: solid 0.1rem $gray-600-color;
         cursor: pointer;
         height: 7rem;
         width: 7rem;
@@ -365,7 +365,7 @@ footer {
     justify-content: center;
     width: 5rem;
     height: 5rem;
-    border: 1px solid $gray-600-color;
+    border: 0.1rem solid $gray-600-color;
     border-radius: 50%;
     cursor: pointer;
 
