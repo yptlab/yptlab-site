@@ -1,3 +1,20 @@
+// (시작) waypoint 헤더 색상 변경
+const $what = document.querySelector(".what");
+const whatRect = $what.offsetTop;
+
+new Waypoint({
+  element: $what,
+  handler: function (dir) {
+    if (dir === "down") {
+      $header.classList.remove("white");
+    } else {
+      $header.classList.add("white");
+    }
+  },
+  offset: "0%",
+});
+// (끝) waypoint 헤더 색상 변경
+
 // (시작) 메인비주얼 swiper
 let swVisual = new Swiper(".swvisual", {
   effect: "fade",
@@ -8,12 +25,11 @@ let swVisual = new Swiper(".swvisual", {
     disableOnInteraction: false,
   },
   pagination: {
-    el: '.pagination',
-    clickable : true,  // 버튼 클릭 여부
-    type : 'bullets',
-  }
+    el: ".pagination",
+    clickable: true, // 버튼 클릭 여부
+    type: "bullets",
+  },
 });
-
 
 // (끝) 메인비주얼 swiper
 
@@ -28,13 +44,12 @@ function getPartnersData() {
       partnersList = result;
       makeParntersList(result.logo);
     })
-  .catch(err => console.log("파트너사 로고 가져오기 실패", err))
-  
+    .catch((err) => console.log("파트너사 로고 가져오기 실패", err));
 }
 
 function makeParntersList(items) {
   $partnersWrapper.innerHTML = null;
-  items.forEach(item => {
+  items.forEach((item) => {
     const result = makePartersItem(item);
     $partnersWrapper.appendChild(result);
   });
@@ -42,7 +57,7 @@ function makeParntersList(items) {
 
 function makePartersItem(item) {
   const div = document.createElement("div");
-  div.classList.add("logo-item")
+  div.classList.add("logo-item");
 
   div.innerHTML = `
     <img class="logo-img" src="${item.img}" alt="${item.alt}">
