@@ -2,62 +2,92 @@
 @import "mixins";
 
 // 메인페이지 스타일시트
-.inner {
-  padding: $margin-height-large $margin-width-large;
-}
-
-/* what we do */
-.what {
-  position: relative;
+main{
   .inner {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    .title-wrap {
-      position: relative;
-      
-      .title {
-        position: sticky;
-        position: -webkit-sticky;
-        top: $margin-height-large;
-        @include title-md;
-      }
-    }
-
-    .item-wrap {
+    padding: $margin-height-large $margin-width-large;
+  }
+  
+  /* what we do */
+  .what {
+    position: relative;
+    .inner {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8rem 3rem;
-
-      .item {
-        .img-wrap {
-          margin-bottom: 5rem;
+      grid-template-columns: 1fr 2fr;
+  
+      .title-wrap {
+        position: relative;
+  
+        .title {
+          position: sticky;
+          position: -webkit-sticky;
+          top: $margin-height-large;
+          @include title-md;
         }
-        .item-title {
-          @include title-xs;
-          margin-bottom: 3rem;
-        }
-        .item-desc {
-          @include text-lg;
-          margin-bottom: 2rem;
-        }
-        .item-tag {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          column-gap: 3rem;
-          li {
-            @include text-md;
-            height: 6rem;
-            width: 100%;
-            line-height: 6rem;
-            border-bottom: 1px solid $gray-200-color;
-            padding-left: 0.6rem;
+      }
+  
+      .item-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem 3rem;
+  
+        .item {
+          .img-wrap {
+            margin-bottom: 5rem;
+          }
+          .item-title {
+            @include title-xs;
+            margin-bottom: 3rem;
+          }
+          .item-desc {
+            @include text-lg;
+            margin-bottom: 2rem;
+          }
+          .item-tag {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+            li {
+              @include text-md;
+              height: 6rem;
+              width: 100%;
+              line-height: 6rem;
+              border-bottom: 1px solid $gray-200-color;
+              padding-left: 0.6rem;
+            }
           }
         }
       }
     }
   }
-}
+  /* // what we do */
+  /* slogan */
+  .slogan {
+    width: 100vw;
+    height: 77.6rem;
+    background: url(../../img/main_slogan_bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+  
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: $primary-color, $alpha: 0.66);
 
-/* // what we do */
+      .title {
+        @include title-md;
+        color: $white-color;
+        text-align: center;
+      }
+
+      span {
+        @include text-lg;
+        color: $white-color;
+      }
+    }
+  }
+  /* // slogan */
+}
 

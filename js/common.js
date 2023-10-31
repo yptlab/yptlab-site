@@ -3,7 +3,7 @@ const $alert = document.querySelectorAll(".alert");
 
 $alert.forEach((item) => {
   item.addEventListener("click", function () {
-    alert("🚧서비스 준비중입니다. 빠른 시일 내에 준비하여 찾아뵙겠습니다.")
+    alert("🚧서비스 준비중입니다. 빠른 시일 내에 준비하여 찾아뵙겠습니다🚧");
   })
 })
 
