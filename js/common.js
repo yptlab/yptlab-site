@@ -38,3 +38,13 @@ function toggleMenu() {
   }
 }
 // (끝) 햄버거 버튼 열림/닫힘
+
+// (시작) gotop 버튼 클릭 이벤트
+const $goTopBtn = document.querySelector(".goTop");
+$goTopBtn.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
+// (끝) gotop 버튼 클릭 이벤트

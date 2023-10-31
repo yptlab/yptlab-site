@@ -1,1 +1,99 @@
 @import "./variables";
+
+/* 폰트 스타일(size, weight, line-height...) */
+@mixin title-lg {
+  font-size: $title-lg;
+  font-weight: 600;
+  line-height: $line-height-md;
+  letter-spacing: -0.192rem;
+  @content;
+}
+
+@mixin title-md {
+  font-size: $title-md;
+  font-weight: 700;
+  line-height: $line-height-md;
+  letter-spacing: -0.064rem;
+  @content;
+}
+
+@mixin title-sm {
+  font-size: $title-sm;
+  font-weight: 700;
+  line-height: $line-height-sm;
+  letter-spacing: -0.048rem;
+  @content;
+}
+
+@mixin title-xs {
+  font-size: $title-xs;
+  font-weight: 700;
+  line-height: $line-height-sm;
+  letter-spacing: -0.036rem;
+  @content;
+}
+
+@mixin title-2xs {
+  font-size: $title-2xs;
+  font-weight: 700;
+  line-height: $line-height-sm;
+  letter-spacing: -0.024rem;
+  @content;
+}
+
+@mixin text-xl {
+  font-size: $text-xl;
+  font-weight: 400;
+  line-height: $line-height-lg;
+  letter-spacing: -0.024rem;
+  @content;
+}
+
+@mixin text-lg {
+  font-size: $text-lg;
+  font-weight: 400;
+  line-height: $line-height-lg;
+  letter-spacing: -0.02rem;
+  @content;
+}
+
+@mixin text-md {
+  font-size: $text-md;
+  font-weight: 400;
+  line-height: $line-height-lg;
+  letter-spacing: -0.032rem;
+  @content;
+}
+
+@mixin text-sm {
+  font-size: $text-sm;
+  font-weight: 400;
+  line-height: $line-height-md;
+  letter-spacing: -0.028rem;
+  @content;
+}
+
+@mixin caption-text {
+  font-size: $caption-text;
+  font-weight: 400;
+  line-height: $line-height-md;
+  letter-spacing: -0.012rem;
+  @content;
+}
+
+@mixin button-text {
+  font-size: $button-text;
+  font-weight: 400;
+  line-height: $line-height-md;
+  letter-spacing: -0.012rem;
+  @content;
+}
+
+@mixin title-md {
+  font-size: $title-md;
+  font-weight: 700;
+  line-height: $line-height-md;
+  letter-spacing: -0.064rem;
+  @content;
+}
+

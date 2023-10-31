@@ -9,6 +9,7 @@
 /* 폰트 */
 /* 폰트 사이즈 */
 /* 트랜지션(transition) */
+/* 폰트 스타일(size, weight, line-height...) */
 /* 마진(margin) */
 /* 색상표 */
 /* 폰트 */
@@ -19,6 +20,19 @@
 /* 폰트 */
 /* 폰트 사이즈 */
 /* 트랜지션(transition) */
+/* 폰트 스타일(size, weight, line-height...) */
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: #333;
+}
+
 html {
   font-size: 0.5208vw;
 }
@@ -29,13 +43,13 @@ body {
   height: 100%;
 }
 
-/* header, footer */
+/* header */
 header .inner {
   z-index: 999;
   position: fixed;
   left: 0;
   right: 0;
-  padding: 1.8rem 9.6rem;
+  padding: 1.8rem 10rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -46,7 +60,7 @@ header .inner .logo {
   height: 3rem;
   background: url(../../img/logo_white.png) no-repeat left/contain;
   transition: background 0.6s ease;
-  -webkit-transform: background 0.6s ease;
+  --webkit-transform: background 0.6s ease;
 }
 header .inner .logo.on {
   background: url(../../img/logo_black.png) no-repeat left/contain;
@@ -89,6 +103,7 @@ header .inner .hamburger .hamburger_box.active .line-2 {
 }
 header .menu {
   position: fixed;
+  visibility: hidden;
   z-index: 10;
   top: 0;
   left: 0;
@@ -105,10 +120,11 @@ header .menu {
   background-position: bottom center;
   background-size: contain;
   transform: translateY(-100%);
-  transition: transform 0.6s ease;
-  -webkit-transform: transform 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transform: all 0.6s ease;
 }
 header .menu.on {
+  visibility: visible;
   transform: translateY(0);
 }
 header .menu-wrap {
@@ -124,10 +140,10 @@ header .menu-wrap .category {
   justify-content: space-between;
 }
 header .menu-wrap .category li a {
-  font-weight: 700;
   font-size: 4.8rem;
+  font-weight: 700;
   line-height: 1.3;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.048rem;
   color: #333;
   position: relative;
 }
@@ -158,14 +174,14 @@ header .menu-wrap .info-wrap .slogan h3 {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 1.3;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.048rem;
   margin-bottom: 3.8rem;
 }
 header .menu-wrap .info-wrap .slogan p {
   font-size: 2rem;
+  font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.02rem;
-  font-weight: 400;
   color: #888;
 }
 header .menu-wrap .info-wrap .info {
@@ -182,19 +198,22 @@ header .menu-wrap .info-wrap .info .company {
   grid-column: 1/3;
   font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: -0.025rem;
+  line-height: 1.3;
+  letter-spacing: -0.024rem;
 }
 header .menu-wrap .info-wrap .info .contact {
-  color: #444;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.4;
-  letter-spacing: -0.03rem;
+  letter-spacing: -0.028rem;
 }
 header .menu-wrap .info-wrap .info .contact li:not(:last-child) {
   margin-bottom: 1.6rem;
 }
-header .menu-wrap .info-wrap .info .contact .type {
+header .menu-wrap .info-wrap .info .contact span {
+  color: #444;
+}
+header .menu-wrap .info-wrap .info .contact span.type {
   display: inline-block;
   width: 7rem;
 }
@@ -208,4 +227,148 @@ header .menu-wrap .info-wrap .info .sns_link a {
 }
 header .menu-wrap .info-wrap .info .sns_link a:not(:last-child) {
   margin-right: 3rem;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* // header */
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-template-rows: 1fr auto;
+  background-color: #333;
+  padding: 0 10rem;
+  height: 75.6rem;
+  position: relative;
+  align-items: center;
+}
+footer .company h4 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.048rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+footer .company span {
+  color: #888;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.032rem;
+}
+footer .company .sns_link {
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6rem;
+}
+footer .company .sns_link a {
+  border-radius: 50%;
+  border: solid 1px #888;
+  cursor: pointer;
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .company .sns_link a:not(:last-child) {
+  margin-right: 2rem;
+}
+footer .company .sns_link a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+footer .next {
+  cursor: pointer;
+}
+footer .next a {
+  position: relative;
+  color: #fff;
+  font-size: 15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.3rem;
+}
+footer .next a::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../img/footer-arrow.png);
+  background-size: 13rem 13rem;
+  right: -60%;
+  top: 18%;
+  width: 13rem;
+  height: 13rem;
+  transition: right 0.2s ease-in-out;
+  --webkit-transition: right 0.2s ease-in-out;
+}
+footer .next:hover a::after {
+  right: -70%;
+}
+footer .info-wrap {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  margin-bottom: 3rem;
+}
+footer .info-wrap .info {
+  align-items: end;
+  display: flex;
+  flex-direction: row;
+}
+footer .info-wrap .info ul:not(:last-child) {
+  margin-right: 3rem;
+}
+footer .info-wrap .info ul li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.012rem;
+  display: inline;
+}
+footer .info-wrap .info ul li.type {
+  color: #eeeef0;
+  margin-right: 1.2rem;
+}
+footer .info-wrap .info ul li.desc {
+  color: #888;
+}
+footer .info-wrap .info.right {
+  justify-content: space-between;
+}
+footer .info-wrap .info.right .ul-item {
+  margin-left: 1.5rem;
+}
+footer .info-wrap .info.right .ul-item ul:first-child {
+  margin-bottom: 0.8rem;
+}
+footer .info-wrap .info.right .desc {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.012rem;
+  display: inline;
+  color: #888;
+}
+footer .goTop {
+  position: absolute;
+  right: 10rem;
+  top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+footer .goTop span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.012rem;
+  color: #eeeef0;
+}
+
+/* // footer *//*# sourceMappingURL=styles.css.map */

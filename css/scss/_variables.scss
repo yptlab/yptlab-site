@@ -2,7 +2,7 @@
 
 /* 마진(margin) */
 // 너비
-$margin-width-large: 9.6rem;
+$margin-width-large: 10rem;
 $margin-height-large: 24rem;
 
 /* 색상표 */
@@ -24,6 +24,7 @@ $title-lg: 9.6rem;
 $title-md: 6.4rem;
 $title-sm: 4.8rem;
 $title-xs: 3.6rem;
+$title-2xs: 2.4rem;
 
 $text-xl: 2.4rem;
 $text-lg: 2rem;
@@ -31,11 +32,12 @@ $text-md: 1.6rem;
 $text-sm: 1.4rem;
 
 $caption-text: 1.2rem;
-$botton-text: 1.2rem;
+$button-text: 1.2rem;
 
 $line-height-lg: 1.6;
 $line-height-md: 1.4;
 $line-height-sm: 1.3;
+$line-height-xs: 1.2;
 
 /* 트랜지션(transition) */
 $duration-long: 600ms;

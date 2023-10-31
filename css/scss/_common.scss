@@ -3,6 +3,17 @@
 @import "mixins";
 // 공통적으로 들어가는 레이아웃
 
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: $black-color;
+}
 html {
   // font-size: 10px;
   font-size: 0.5208vw;
@@ -14,7 +25,7 @@ body {
   height: 100%;
 }
 
-/* header, footer */
+/* header */
 header {
   .inner {
     z-index: 999;
@@ -33,7 +44,7 @@ header {
       height: 3rem;
       background: url(../../img/logo_white.png) no-repeat left/contain;
       transition: background 0.6s ease;
-      -webkit-transform: background 0.6s ease;
+      --webkit-transform: background 0.6s ease;
 
       &.on {
         background: url(../../img/logo_black.png) no-repeat left/contain;
@@ -86,7 +97,7 @@ header {
   }
   .menu {
     position: fixed;
-    // visibility: hidden;
+    visibility: hidden;
     // opacity: 0;
     z-index: 10;
     top: 0;
@@ -98,16 +109,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 24rem;
+    padding: 0 $margin-height-large;
     background-image: url(../../img/menu_bg.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
     transform: translateY(-100%);
-    transition: transform 0.6s ease;
-    -webkit-transform: transform 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-transform: all 0.6s ease;
 
     &.on {
+      visibility: visible;
       transform: translateY(0);
     }
     &-wrap {
@@ -124,10 +136,7 @@ header {
         justify-content: space-between;
         li {
           a {
-            font-weight: 700;
-            font-size: $title-sm;
-            line-height: $line-height-sm;
-            letter-spacing: -0.05rem;
+            @include title-sm;
             color: $black-color;
             position: relative;
 
@@ -162,17 +171,11 @@ header {
 
         .slogan {
           h3 {
-            font-size: $title-sm;
-            font-weight: 700;
-            line-height: $line-height-sm;
-            letter-spacing: -0.05rem;
+            @include title-sm;
             margin-bottom: 3.8rem;
           }
           p {
-            font-size: $text-lg;
-            line-height: $line-height-lg;
-            letter-spacing: -0.02rem;
-            font-weight: 400;
+            @include text-lg;
             color: $gray-600-color;
           }
         }
@@ -189,25 +192,23 @@ header {
 
           .company {
             grid-column: 1 / 3;
-            font-size: $text-xl;
-            font-weight: 700;
-            letter-spacing: -0.025rem;
+            @include title-2xs;
           }
 
           .contact {
-            color: $gray-800-color;
-            font-size: $text-sm;
-            font-weight: 400;
-            line-height: $line-height-md;
-            letter-spacing: -0.03rem;
+            @include text-sm;
 
             li:not(:last-child) {
               margin-bottom: 1.6rem;
             }
 
-            .type {
-              display: inline-block;
-              width: 7rem;
+            span {
+              color: $gray-800-color;
+
+              &.type {
+                display: inline-block;
+                width: 7rem;
+              }
             }
           }
           .sns_link {
@@ -228,3 +229,151 @@ header {
     }
   }
 }
+/* // header */
+
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-template-rows: 1fr auto;
+  background-color: $black-color;
+  padding: 0 $margin-width-large;
+  height: 75.6rem;
+  position: relative;
+  align-items: center;
+
+  .company {
+    h4 {
+      @include title-sm;
+      color: $white-color;
+      margin-bottom: 2rem;
+    }
+    span {
+      color: $gray-600-color;
+      @include text-md;
+    }
+    .sns_link {
+      height: 7rem;
+      display: flex;
+      flex-direction: row;
+      margin-top: 6rem;
+
+      a {
+        border-radius: 50%;
+        border: solid 1px $gray-600-color;
+        cursor: pointer;
+        height: 7rem;
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .next {
+    cursor: pointer;
+    a {
+      position: relative;
+      color: $white-color;
+      font-size: 15rem;
+      font-weight: 600;
+      line-height: $line-height-xs;
+      letter-spacing: -0.3rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../../img/footer-arrow.png);
+        background-size: 13rem 13rem;
+        right: -60%;
+        top: 18%;
+        width: 13rem;
+        height: 13rem;
+        transition: right 0.2s ease-in-out;
+        --webkit-transition: right 0.2s ease-in-out;
+      }
+    }
+    &:hover {
+      a::after {
+        right: -70%;
+      }
+    }
+  }
+  .info-wrap {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    margin-bottom: 3rem;
+
+    .info {
+      align-items: end;
+      display: flex;
+      flex-direction: row;
+
+      ul {
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+
+        li {
+          @include caption-text;
+          display: inline;
+
+          &.type {
+            color: $gray-200-color;
+            margin-right: 1.2rem;
+          }
+          &.desc {
+            color: $gray-600-color;
+          }
+        }
+      }
+      &.right {
+        justify-content: space-between;
+
+        .ul-item {
+          margin-left: 1.5rem;
+
+          ul:first-child {
+            margin-bottom: 0.8rem;
+          }
+        }
+
+        .desc {
+          @include caption-text;
+          display: inline;
+          color: $gray-600-color;
+        }
+      }
+    }
+  }
+  .goTop {
+    position: absolute;
+    right: $margin-width-large;
+    top: $margin-width-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid $gray-600-color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    span {
+      @include caption-text;
+      color: $gray-200-color;
+    }
+  }
+}
+/* // footer */
