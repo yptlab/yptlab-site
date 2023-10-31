@@ -20,14 +20,15 @@ html {
 body {
   position: relative;
   font-family: $font;
-  // overflow: hidden;
   height: 100%;
+  
+  &.no-scroll {
+    overflow-y: hidden;
+  }
 }
 
 /* header */
 header {
-  
-  
   .inner {
     z-index: 999;
     position: fixed;
@@ -38,25 +39,17 @@ header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    
+
     transition: transform 0.3s ease;
     --webkit-transform: all 0.3s ease;
     // background-color: #333;
-    
-    &.hide {
-      // 헤더 숨길때
-      transform: translateY(-100%);
-    }
+
     .logo {
       width: 12.5rem;
       height: 3rem;
       background: url(../../img/logo_black.png) no-repeat left/contain;
       transition: background 0.6s ease;
       --webkit-transform: background 0.6s ease;
-
-      &.on {
-        background: url(../../img/logo_black.png) no-repeat left/contain;
-      }
     }
     .hamburger {
       width: 4rem;
@@ -98,6 +91,24 @@ header {
           .line-2 {
             background-color: $black-color;
             transform: translateY(-0.5rem) translateX(0) rotate(-45deg);
+          }
+        }
+      }
+    }
+    &.hide {
+      // 헤더 숨길때
+      transform: translateY(-100%);
+    }
+
+    &.white {
+      // 첫화면/메인비주얼에 헤더가 있을 때
+      .logo {
+        background: url(../../img/logo_white.png) no-repeat left/contain;
+      }
+      .hamburger {
+        .hamburger_box {
+          .line {
+            background-color: $white-color;
           }
         }
       }

@@ -4,7 +4,7 @@ let swVisual = new Swiper(".swvisual", {
   loop: true,
   speed: 1000,
   autoplay: {
-    delay: 1000000,
+    delay: 10000,
     disableOnInteraction: false,
   },
   pagination: {

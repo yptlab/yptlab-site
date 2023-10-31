@@ -2,6 +2,9 @@
 @import "mixins";
 
 // 메인페이지 스타일시트
+body {
+  overflow-x: hidden;
+}
 main {
   .inner {
     padding: $margin-height-large $margin-width-large;
@@ -9,6 +12,7 @@ main {
   /* visual */
   .visual {
     position: relative;
+    width: 100vw;
     .swvisual-control {
       position: absolute;
       bottom: 14rem;

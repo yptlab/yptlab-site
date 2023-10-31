@@ -28,11 +28,29 @@ window.addEventListener("scroll", () => {
 
 // (끝) 헤더 보임/숨김
 
+// (시작) waypoint 헤더 색상 변경
+const $what = document.querySelector(".what");
+const whatRect = $what.offsetTop;
+
+new Waypoint({
+  element: $what,
+  handler: function (dir) {
+    if (dir === "down") {
+      $header.classList.remove("white");
+    } else {
+      $header.classList.add("white");
+    }
+  },
+  offset: "0%",
+});
+// (끝) waypoint 헤더 색상 변경
+
 // (시작) 햄버거 버튼 열림/닫힘
 const $hamBtn = document.querySelector(".hamburger");
 const $hamSpan = document.querySelector(".hamburger_box");
 const $menu = document.querySelector(".menu");
 const $logo = document.querySelector("header .logo");
+const $body = document.querySelector("body");
 
 $hamBtn.addEventListener("click", toggleMenu);
 
@@ -42,11 +60,12 @@ function toggleMenu() {
 
   // 조건 1: $menu의 class가 on인 경우, $hamBtn의 class도 on으로 설정
   if ($menu.classList.contains("on")) {
-    $hamBtn.classList.add("on");
-    $logo.classList.add("on");
-  } else {
-    $hamBtn.classList.remove("on");
-    $logo.classList.remove("on");
+    $header.classList.remove("white");
+    $body.classList.add("no-scroll")
+  }
+  else {
+    $body.classList.remove("no-scroll")
+    // $header.classList.add("white");
   }
 }
 // (끝) 햄버거 버튼 열림/닫힘
