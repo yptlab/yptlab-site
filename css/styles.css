@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+html {
+  font-size: 0.5208vw;
+}
+
+body {
+  position: relative;
+  font-family: "SUIT", -apple-system, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, sans-serif;
+  height: 100%;
+}
+
+/* header, footer */
+header .inner {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 1.8rem 9.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .inner .logo {
+  width: 12.5rem;
+  height: 3rem;
+  background: url(../../img/logo_white.png) no-repeat left;
+  background-size: contain;
+}
+header .inner .hamburger {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+header .inner .hamburger .hamburger_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+header .inner .hamburger .hamburger_box .line {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 0.25rem;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+}
+header .inner .hamburger .hamburger_box .line-1 {
+  top: 0;
+}
+header .inner .hamburger .hamburger_box .line-2 {
+  top: 100%;
+}
+header .inner .hamburger .hamburger_box.active .line-1 {
+  transform: translateY(0.5rem) translateX(0) rotate(45deg);
+}
+header .inner .hamburger .hamburger_box.active .line-2 {
+  transform: translateY(-0.5rem) translateX(0) rotate(-45deg);
+}
+header .menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 24rem;
+  background-image: url(../../img/menu_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  transform: translateY(-100%);
+  transition: transform 0.6s ease;
+  -webkit-transform: transform 0.6s ease;
+}
+header .menu.on {
+  transform: translateY(0);
+}
+header .menu-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 51rem;
+  justify-content: space-between;
+  width: 100%;
+}
+header .menu-wrap .category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .menu-wrap .category li a {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.3;
+  letter-spacing: -0.05rem;
+  color: #333;
+  position: relative;
+}
+header .menu-wrap .category li a::before {
+  content: "";
+  background-image: url(../../img/menu-hover-arrow.png);
+  background-size: 5rem 5rem;
+  position: absolute;
+  left: -8rem;
+  top: 8%;
+  opacity: 0;
+  width: 5rem;
+  height: 5rem;
+}
+header .menu-wrap .category li a:hover {
+  color: #1d68fd;
+}
+header .menu-wrap .category li a:hover::before {
+  opacity: 1;
+}
+header .menu-wrap .info-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .menu-wrap .info-wrap .slogan h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.05rem;
+  margin-bottom: 3.8rem;
+}
+header .menu-wrap .info-wrap .slogan p {
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: -0.02rem;
+  font-weight: 400;
+  color: #888;
+}
+header .menu-wrap .info-wrap .info {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 2rem;
+  grid-template-columns: 3fr 2fr;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 0.6rem;
+}
+header .menu-wrap .info-wrap .info .company {
+  grid-column: 1/3;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.025rem;
+}
+header .menu-wrap .info-wrap .info .contact {
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.03rem;
+}
+header .menu-wrap .info-wrap .info .contact li:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+header .menu-wrap .info-wrap .info .contact .type {
+  display: inline-block;
+  width: 7rem;
+}
+header .menu-wrap .info-wrap .info .sns_link {
+  display: flex;
+  flex-direction: row;
+}
+header .menu-wrap .info-wrap .info .sns_link a {
+  width: 4rem;
+  height: 4rem;
+}
+header .menu-wrap .info-wrap .info .sns_link a:not(:last-child) {
+  margin-right: 3rem;
+}/*# sourceMappingURL=styles.css.map */

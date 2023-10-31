@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>윤피티연구소</title>
+
+    <!-- favicon 추가예정-->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png"/> -->
+
+    <!-- font -->
+    <link rel="stylesheet" href="font/font.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/vendors/minireset.css" />
+    <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- 전체레이아웃 -->
@@ -19,48 +30,69 @@
         </button>
       </nav>
       <section class="menu">
-        <ul class="category">
-          <li>
-            <a href="#">회사소개</a>
-          </li>
-          <li>
-            <a href="#">사업영역</a>
-          </li>
-          <li>
-            <a href="#">포트폴리오</a>
-          </li>
-          <li>
-            <a href="#">서비스안내</a>
-          </li>
-        </ul>
-        <div class="slogan">
-          <h3>
-            We seek meaningful design, <br />
-            not just pretty design
-          </h3>
-          <p>우리는 단순히 예쁜 디자인이 아닌, 의미있는 디자인을 추구합니다.</p>
-        </div>
-        <div class="info">
-          <h4 class="company">윤피티연구소</h4>
-          <ul class="contact">
-            <li class="tel">
-              <span>Tel</span>
-              <span>010-4521-1030</span>
+        <div class="menu-wrap">
+          <ul class="category">
+            <li>
+              <a href="#">회사소개</a>
             </li>
-            <li class="mail">
-              <span>Mail</span>
-              <span>rimiy@naver.com</span>
+            <li>
+              <a href="#" class="alert">사업영역</a>
             </li>
-            <li class="address">
-              <span>Address</span>
-              <span>대구광역시 수성구 범어로 127, 304호</span>
+            <li>
+              <a href="#" class="alert">포트폴리오</a>
+            </li>
+            <li>
+              <a href="#" class="alert">서비스안내</a>
             </li>
           </ul>
-          <nav class="sns_link">
-            <button class="blog"></button>
-            <button class="insta"></button>
-            <button class="store"></button>
-          </nav>
+          <section class="info-wrap">
+            <div class="slogan">
+              <h3>
+                We seek meaningful design, <br />
+                not just pretty design
+              </h3>
+              <p>
+                우리는 단순히 예쁜 디자인이 아닌, 의미있는 디자인을 추구합니다.
+              </p>
+            </div>
+            <div class="info">
+              <h4 class="company">윤피티연구소</h4>
+              <ul class="contact">
+                <li class="tel">
+                  <span class="type">Tel</span>
+                  <span class="desc">010-4521-1030</span>
+                </li>
+                <li class="mail">
+                  <span class="type">Mail</span>
+                  <span class="desc">rimiy@naver.com</span>
+                </li>
+                <li class="address">
+                  <span class="type">Address</span>
+                  <span class="desc">대구광역시 수성구 범어로 127, 304호</span>
+                </li>
+              </ul>
+              <nav class="sns_link">
+                <a
+                  href="https://blog.naver.com/rimiy"
+                  target="_blank"
+                  class="blog"
+                  ><img src="./img/menu_sns_blog.png" alt="네이버블로그"
+                /></a>
+                <a
+                  href="https://www.instagram.com/yptlab/"
+                  target="_blank"
+                  class="insta"
+                  ><img src="./img/menu_sns_insta.png" alt="인스타그램"
+                /></a>
+                <a
+                  href="https://smartstore.naver.com/yptlab"
+                  target="_blank"
+                  class="store"
+                  ><img src="./img/menu_sns_store.png" alt="네이버스토어"
+                /></a>
+              </nav>
+            </div>
+          </section>
         </div>
       </section>
     </header>
@@ -73,16 +105,33 @@
         <div class="swiper swvisual">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <video src="img/main_bg_1.mp4" muted autoplay loop class="bg_1"></video>
+              <video
+                src="img/main_bg_1.mp4"
+                muted
+                autoplay
+                loop
+                class="bg_1"
+              ></video>
             </div>
             <div class="swiper-slide">
-              <video src="img/main_bg_2.mp4" muted autoplay loop class="bg_2"></video>
+              <video
+                src="img/main_bg_2.mp4"
+                muted
+                autoplay
+                loop
+                class="bg_2"
+              ></video>
             </div>
             <div class="swiper-slide">
-              <video src="img/main_bg_3.mp4" muted autoplay loop class="bg_3"></video>
+              <video
+                src="img/main_bg_3.mp4"
+                muted
+                autoplay
+                loop
+                class="bg_3"
+              ></video>
             </div>
           </div>
-          
         </div>
         <!-- // 영상 스와이퍼 -->
 
@@ -117,10 +166,13 @@
           <section class="item_wrap">
             <div class="item item_1">
               <div class="img_wrap">
-                <img src="img/main_what_1.jpg" alt="디자인" class="img">
+                <img src="img/main_what_1.jpg" alt="디자인" class="img" />
               </div>
               <h4 class="item_title">디자인</h4>
-              <p class="item_desc">생각을 온전히 담아 전달할 수 있는 프레젠테이션 작업을 진행합니다. 클라이언트가 만족하는 디자인을 도출합니다.</p>
+              <p class="item_desc">
+                생각을 온전히 담아 전달할 수 있는 프레젠테이션 작업을
+                진행합니다. 클라이언트가 만족하는 디자인을 도출합니다.
+              </p>
               <ul class="item_tag">
                 <li># 소개서</li>
                 <li># 제안서 및 IR덱</li>
@@ -132,10 +184,13 @@
             </div>
             <div class="item item_2">
               <div class="img_wrap">
-                <img src="img/main_what_2.jpg" alt="컨설팅" class="img">
+                <img src="img/main_what_2.jpg" alt="컨설팅" class="img" />
               </div>
               <h4 class="item_title">컨설팅</h4>
-              <p class="item_desc">클라이언트의 어려움에 대한 솔루션을 제공합니다. 프레젠테이션 제작의 기획단계부터 참여하여 마감까지 프로젝트를 진행합니다.</p>
+              <p class="item_desc">
+                클라이언트의 어려움에 대한 솔루션을 제공합니다. 프레젠테이션
+                제작의 기획단계부터 참여하여 마감까지 프로젝트를 진행합니다.
+              </p>
               <ul class="item_tag">
                 <li># 스타트업</li>
                 <li># 회사소개서 및 제안서</li>
@@ -146,10 +201,13 @@
             </div>
             <div class="item item_3">
               <div class="img_wrap">
-                <img src="img/main_what_3.jpg" alt="강의" class="img">
+                <img src="img/main_what_3.jpg" alt="강의" class="img" />
               </div>
               <h4 class="item_title">강의</h4>
-              <p class="item_desc">기획부터 디자인까지 작업과 관련한 다양한 노하우를 전달합니다. 10년차 프레젠테이션 디자이너의 경험을 온전히 들려드립니다.</p>
+              <p class="item_desc">
+                기획부터 디자인까지 작업과 관련한 다양한 노하우를 전달합니다.
+                10년차 프레젠테이션 디자이너의 경험을 온전히 들려드립니다.
+              </p>
               <ul class="item_tag">
                 <li># 사내교육</li>
                 <li># 실습교육</li>
@@ -163,10 +221,14 @@
             </div>
             <div class="item item_4">
               <div class="img_wrap">
-                <img src="img/main_what_4.jpg" alt="행사운영" class="img">
+                <img src="img/main_what_4.jpg" alt="행사운영" class="img" />
               </div>
               <h4 class="item_title">행사운영</h4>
-              <p class="item_desc">당일행사부터 며칠간 진행되는 프로그램까지, 다양한 행사를 운영합니다. 트렌디하고 참여자가 즐길 수 있는 이벤트를 추구합니다.</p>
+              <p class="item_desc">
+                당일행사부터 며칠간 진행되는 프로그램까지, 다양한 행사를
+                운영합니다. 트렌디하고 참여자가 즐길 수 있는 이벤트를
+                추구합니다.
+              </p>
               <ul class="item_tag">
                 <li># 해커톤행사 운영</li>
                 <li># 교육프로그램 운영</li>
@@ -186,7 +248,10 @@
             We seek meaningful design, <br />
             not just pretty design
           </h3>
-          <span>우리는 단순히 예쁜 디자인이 아닌, 의미있는 디자인을 추구합니다.</span>
+          <span
+            >우리는 단순히 예쁜 디자인이 아닌, 의미있는 디자인을
+            추구합니다.</span
+          >
         </div>
       </section>
       <!-- // 슬로건 -->
@@ -196,8 +261,9 @@
         <div class="inner">
           <h3 class="title">파트너사</h3>
           <span class="desc">
-            윤피티연구소와 함께 다양한 과업을 진행하고 있는 고객사입니다. <br/>
-            우리의 모든 역량을 다해 고객사에게 최선을 선사할 수 있도록 언제나 노력하고 있습니다.
+            윤피티연구소와 함께 다양한 과업을 진행하고 있는 고객사입니다. <br />
+            우리의 모든 역량을 다해 고객사에게 최선을 선사할 수 있도록 언제나
+            노력하고 있습니다.
           </span>
           <div class="partners_logo">
             <!-- json data - logo -->
@@ -253,7 +319,8 @@
         <span>TOP</span>
       </div>
     </footer>
-    <!-- //푸 터 -->
+    <!-- // 푸터 -->
     <!-- // 전체레이아웃 -->
+    <script src="js/script.js"></script>
   </body>
 </html>
