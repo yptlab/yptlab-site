@@ -1,0 +1,167 @@
+{ 
+  "mainVisual" : [
+    {
+      "title1" : "We provide a design",
+      "title2" : "that fully expresses",
+      "title3" : "thoughts and dreams",
+      "desc1" : "우리는 생각과 꿈을 온전히",
+      "desc2" : "표현할 수 있는 디자인을 제공합니다"
+    },
+    {
+      "title1" : "The most important task",
+      "title2" : "for us is to",
+      "title3" : "design the best",
+      "desc1" : "최선을 도출할 수 있는 디자인을 하는 것이",
+      "desc2" : "우리의 최우선 과제입니다"
+    },
+    {
+      "title1" : "The best moment for",
+      "title2" : "a customer is the best result ",
+      "title3" : "we make",
+      "desc1" : "고객의 최고의 순간이",
+      "desc2" : "우리가 만드는 최고의 결과입니다"
+    }
+  ],
+  "logo" : [
+    {
+      "img" : "../img/logo/main_partner_skt.png",
+      "alt" : "SKT"
+    },
+    {
+      "img" : "../img/logo/main_partner_현대글로비스.png",
+      "alt" : "현대글로비스"
+    },
+    {
+      "img" : "../img/logo/main_partner_현대자동차.png",
+      "alt" : "현대자동차"
+    },
+    {
+      "img" : "../img/logo/main_partner_현대일렉트릭.png",
+      "alt" : "현대일렉트릭"
+    },
+    {
+      "img" : "../img/logo/main_partner_posco.png",
+      "alt" : "포스코"
+    },
+    {
+      "img" : "../img/logo/main_partner_ktcs.png",
+      "alt" : "KTcs"
+    },
+    {
+      "img" : "../img/logo/main_partner_asml.png",
+      "alt" : "ASML"
+    },
+    {
+      "img" : "../img/logo/main_partner_한국능률협회.png",
+      "alt" : "한국능률협회"
+    },
+    {
+      "img" : "../img/logo/main_partner_display.png",
+      "alt" : "삼성 디스플레이"
+    },
+    {
+      "img" : "../img/logo/main_partner_orion.png",
+      "alt" : "오리온"
+    },
+    {
+      "img" : "../img/logo/main_partner_zigbang.png",
+      "alt" : "직방"
+    },
+    {
+      "img" : "../img/logo/main_partner_인천테크노.png",
+      "alt" : "인천테크노파크"
+    },
+    {
+      "img" : "../img/logo/main_partner_포항테크노.png",
+      "alt" : "포항테크노파크"
+    },
+    {
+      "img" : "../img/logo/main_partner_인천콘텐츠.png",
+      "alt" : "인천콘텐츠코리아랩"
+    },
+    {
+      "img" : "../img/logo/main_partner_cheil.png",
+      "alt" : "제일기획"
+    },
+    {
+      "img" : "../img/logo/main_partner_모두의연구소.png",
+      "alt" : "모두의연구소"
+    },
+    {
+      "img" : "../img/logo/main_partner_소셜캠퍼스.png",
+      "alt" : "소셜캠퍼스온"
+    },
+    {
+      "img" : "../img/logo/main_partner_한국예탁.png",
+      "alt" : "한국예탁결제원"
+    },
+    {
+      "img" : "../img/logo/main_partner_한국eap.png",
+      "alt" : "한국EAP협회"
+    },
+    {
+      "img" : "../img/logo/main_partner_대구창조.png",
+      "alt" : "대구창조경제혁신센터"
+    },
+    {
+      "img" : "../img/logo/main_partner_한국스포츠정책과학원.png",
+      "alt" : "한국스포츠정책과학원"
+    },
+    {
+      "img" : "../img/logo/main_partner_울산청년창업센터.png",
+      "alt" : "울산청년창업센터"
+    },
+    {
+      "img" : "../img/logo/main_partner_서울시.png",
+      "alt" : "서울특별시"
+    },
+    {
+      "img" : "../img/logo/main_partner_남양주.png",
+      "alt" : "남양주시"
+    },
+    {
+      "img" : "../img/logo/main_partner_영등포구.png",
+      "alt" : "영등포구청"
+    },
+    {
+      "img" : "../img/logo/main_partner_대구경찰청.png",
+      "alt" : "대구지방경찰청"
+    },
+    {
+      "img" : "../img/logo/main_partner_class101.png",
+      "alt" : "클래스101"
+    },
+    {
+      "img" : "../img/logo/main_partner_yoon.png",
+      "alt" : "윤디자인그룹"
+    },
+    {
+      "img" : "../img/logo/main_partner_경희대.png",
+      "alt" : "경희대학교"
+    },
+    {
+      "img" : "../img/logo/main_partner_중앙대.png",
+      "alt" : "중앙대학교"
+    },
+    {
+      "img" : "../img/logo/main_partner_동국대.png",
+      "alt" : "동국대학교"
+    },
+    {
+      "img" : "../img/logo/main_partner_인하대.png",
+      "alt" : "인하대학교"
+    },
+    {
+      "img" : "../img/logo/main_partner_삼육대.png",
+      "alt" : "삼육대학교"
+    },
+    {
+      "img" : "../img/logo/main_partner_울산대.png",
+      "alt" : "울산대학교"
+    },
+    {
+      "img" : "../img/logo/main_partner_순천향대.png",
+      "alt" : "순천향대학교"
+    }
+  ]
+}
