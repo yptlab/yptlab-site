@@ -13,6 +13,7 @@ $alert.forEach((item) => {
 const $hamBtn = document.querySelector(".hamburger");
 const $hamSpan = document.querySelector(".hamburger_box");
 const $menu = document.querySelector(".menu");
+const $logo = document.querySelector("header .logo")
 // const $linkArea = document.querySelectorAll(".fullscreen_menu > .link_area a");
 
 $hamBtn.addEventListener("click", toggleMenu);
@@ -26,6 +27,14 @@ $hamBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
   $hamSpan.classList.toggle("active");
   $menu.classList.toggle("on");
-}
 
+  // 조건 1: $menu의 class가 on인 경우, $hamBtn의 class도 on으로 설정
+  if ($menu.classList.contains("on")) {
+    $hamBtn.classList.add("on");
+    $logo.classList.add("on");
+  } else {
+    $hamBtn.classList.remove("on");
+    $logo.classList.remove("on");
+  }
+}
 // (끝) 햄버거 버튼 열림/닫힘
