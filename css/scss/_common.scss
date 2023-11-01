@@ -21,9 +21,20 @@ body {
   position: relative;
   font-family: $font;
   height: 100%;
-  
+
   &.no-scroll {
     overflow-y: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-800-color;
+    outline: none;
+    border: 0.2rem solid transparent;
+    border-radius: 0.5rem;
   }
 }
 

@@ -45,6 +45,16 @@ body {
 body.no-scroll {
   overflow-y: hidden;
 }
+body::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+body::-webkit-scrollbar-thumb {
+  background: #444;
+  outline: none;
+  border: 0.2rem solid transparent;
+  border-radius: 0.5rem;
+}
 
 /* header */
 header .inner {
