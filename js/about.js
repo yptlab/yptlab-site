@@ -28,7 +28,7 @@ let swVisual = new Swiper(".swAboutVisual", {
   pagination: {
     el: ".pagination",
     type: "fraction",
-  },
+  }
+  
 });
-
 // (끝) 메인비주얼 swiper

@@ -647,8 +647,8 @@ main .about-visual .swvisual-control .sw-page {
   line-height: 1.6;
   letter-spacing: -0.02rem;
   font-weight: 700;
-  bottom: 45rem;
-  left: 24.5rem;
+  bottom: 37rem;
+  left: 10rem;
   color: #888;
   width: -moz-max-content;
   width: max-content;
@@ -686,6 +686,9 @@ main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
   line-height: 1.4;
   letter-spacing: -0.064rem;
   color: #fff;
+}
+main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title.highlight {
+  color: #ff0;
 }
 main .about-visual .swAboutVisual .swiper-slide .slide-img {
   width: 100%;

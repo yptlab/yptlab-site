@@ -12,8 +12,8 @@ main {
         position: absolute;
         @include text-lg;
         font-weight: 700;
-        bottom: 45rem;
-        left: 24.5rem;
+        bottom: 37rem;
+        left: 10rem;
         color: $gray-600-color;
         width: max-content;
 
@@ -48,6 +48,10 @@ main {
           .swvisual-title {
             @include title-md;
             color: $white-color;
+
+            &.highlight {
+              color: #ff0;
+            }
           }
         }
         .slide-img {
