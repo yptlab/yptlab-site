@@ -687,9 +687,6 @@ main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
   letter-spacing: -0.064rem;
   color: #fff;
 }
-main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title.highlight {
-  color: #ff0;
-}
 main .about-visual .swAboutVisual .swiper-slide .slide-img {
   width: 100%;
   height: 100vh;
@@ -872,6 +869,7 @@ main .member-con .inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  padding-bottom: 12rem;
 }
 main .member-con .inner .member img {
   height: 55rem;
@@ -944,6 +942,9 @@ main .member-con .inner .member .info > * .info-list li {
        column-rule: #444;
   line-height: 6rem;
 }
+main .member-con .inner .member .info .task .info-list {
+  grid-template-rows: repeat(3, 1fr);
+}
 main .member-con .inner .member .info .task .info-list li::before {
   content: "#";
   padding-right: 0.5rem;
@@ -972,6 +973,7 @@ main .business-title .title {
   letter-spacing: -0.064rem;
   padding: 24rem 0 4rem;
   text-align: center;
+  background-color: #f8f8fa;
 }
 main .business-title nav {
   border-top: 0.1rem solid #eeeef0;
@@ -1005,7 +1007,7 @@ main .business-title nav .business-link a:hover, main .business-title nav .busin
 }
 main .reason-wrap .inner {
   text-align: center;
-  padding: 24rem 40rem;
+  padding: 12rem 40rem;
 }
 main .reason-wrap .inner .mini-title {
   font-size: 2.4rem;

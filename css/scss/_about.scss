@@ -48,10 +48,6 @@ main {
           .swvisual-title {
             @include title-md;
             color: $white-color;
-
-            &.highlight {
-              color: #ff0;
-            }
           }
         }
         .slide-img {
@@ -202,6 +198,7 @@ main {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 3rem;
+      padding-bottom: 12rem;
 
       .member {
         img {
@@ -266,6 +263,7 @@ main {
 
           .task {
             .info-list {
+              grid-template-rows: repeat(3, 1fr);
               li::before {
                 content: "#";
                 padding-right: 0.5rem;
