@@ -1,0 +1,24 @@
+@import "../variables";
+@import "../mixins";
+
+#making-table {
+  & > * > * {
+    grid-template-columns: 1fr 1fr 2.8fr 2.1fr;
+    
+  }
+  .main-table {
+    grid-template-rows: auto repeat(3, 16rem);
+
+    .price {
+      line-height: 16rem;
+    }
+    
+  }
+  .sub-table {
+    grid-template-rows: auto repeat(8, 8rem);
+
+    .price {
+      line-height: 8rem;
+    }
+  }
+}

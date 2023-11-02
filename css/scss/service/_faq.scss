@@ -1,0 +1,112 @@
+@import "../variables";
+@import "../mixins";
+
+.faq-con {
+  .inner {
+    padding: $margin-width-large;
+    .sub-title {
+      @include title-2xs;
+      color: $primary-color;
+    }
+    & > .title {
+      @include title-sm;
+      margin-bottom: 9rem;
+    }
+
+    .filter {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2rem;
+
+      .filter-item {
+        @include text-md;
+        color: $gray-600-color;
+        line-height: 1;
+        padding: 0 2rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+          border-right: 0.1rem solid $gray-400-color;
+        }
+
+        &.active {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .faq-area {
+      border-top: 0.1rem solid $gray-200-color;
+      .faq-item {
+        & > * {
+          display: grid;
+          grid-template-columns: 8rem 1fr 8rem;
+
+          .type {
+            @include text-lg;
+            font-weight: 700;
+            color: $primary-color;
+            padding: 2.4rem 3rem;
+          }
+        }
+
+        .question {
+          
+          border-bottom: 0.1rem solid $gray-200-color;
+
+          cursor: pointer;
+          .title {
+            @include text-lg;
+            font-weight: 700;
+            align-self: center;
+            padding: 2.4rem 3rem;
+          }
+          .more-btn {
+            justify-self: end;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            border: 0.1rem solid $gray-200-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2.4rem 3rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            --webkit-transition: transform 0.3s ease;
+
+            &.show {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+        .answer {
+          max-height: 0;
+          overflow: hidden;
+          background-color: $gray-100-color;
+
+          transition: max-height 0.3s ease;
+          --webkit-transition: max-height 0.3s ease;
+
+          .text-wrap {
+            padding: 2.4rem 3rem;
+            @include text-md;
+            align-self: flex-start;
+
+            .desc {
+              padding-top: 2.4rem;
+
+              .bold {
+                font-weight: 700;
+              }
+            }
+            .sub-text {
+              padding-top: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

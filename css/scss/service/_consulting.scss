@@ -1,0 +1,22 @@
+@import "../variables";
+@import "../mixins";
+
+#consulting-table {
+  & > * > * {
+    grid-template-columns: 1fr repeat(4, 1.4fr);
+  }
+  .main-table {
+    grid-template-rows: auto repeat(3, 16rem);
+    .price {
+
+      line-height: 16rem;
+    }
+  }
+  .sub-table {
+    grid-template-rows: auto repeat(2, 12rem);
+
+    .price {
+      line-height: 12rem;
+    }
+  }
+}

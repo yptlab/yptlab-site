@@ -16,7 +16,7 @@ new Waypoint({
 // (끝) waypoint 헤더 색상 변경
 
 // (시작) 메인비주얼 swiper
-let swVisual = new Swiper(".swvisual", {
+let swVisual = new Swiper(".main-visual .swvisual", {
   effect: "fade",
   loop: true,
   speed: 1000,

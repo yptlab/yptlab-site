@@ -1,0 +1,275 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+main {
+  .about-visual {
+    position: relative;
+    width: 100vw;
+
+    .swvisual-control {
+      .sw-page {
+        z-index: 9;
+        position: absolute;
+        @include text-lg;
+        font-weight: 700;
+        bottom: 45rem;
+        left: 24.5rem;
+        color: $gray-600-color;
+        width: max-content;
+
+        .swiper-pagination-current {
+          color: $white-color;
+          padding-right: 1rem;
+        }
+        .swiper-pagination-total {
+          color: $gray-600-color;
+          padding-left: 1rem;
+        }
+      }
+    }
+    .swAboutVisual {
+      width: 100%;
+      height: 100vh;
+
+      .swiper-slide {
+        overflow: hidden;
+        .inner {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          z-index: 1;
+          padding: $margin-height-large;
+
+          .swvisual-title {
+            @include title-md;
+            color: $white-color;
+          }
+        }
+        .slide-img {
+          width: 100%;
+          height: 100vh;
+
+          &.bg-1 {
+            background: url("../../img/about_bg_1.jpg") no-repeat center;
+            background-size: cover;
+          }
+          &.bg-2 {
+            background: url("../../img/about_bg_2.jpg") no-repeat center;
+            background-size: cover;
+          }
+          &.bg-3 {
+            background: url("../../img/about_bg_3.jpg") no-repeat center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+  .carousel-con {
+    margin-top: 4rem;
+    max-width: 100%;
+    position: relative;
+    .carousel-1 {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      .text-swiper {
+        width: 100%;
+        display: flex;
+
+        .text-slide {
+          display: flex;
+          width: 180%;
+          justify-content: space-between;
+          white-space: nowrap;
+
+          &.original {
+            @include rolling-origin-left;
+          }
+
+          &.clone {
+            @include rolling-clone-left;
+            margin-left: 1rem;
+          }
+
+          span {
+            @include title-lg;
+            color: $gray-100-color;
+            box-sizing: content-box;
+            line-height: 1;
+          }
+        }
+      }
+    }
+    .carousel-2 {
+      position: relative;
+      width: 100%;
+      // background-color: antiquewhite;
+      height: 10rem;
+
+      .text-swiper {
+        display: flex;
+        position: absolute;
+        left: -50%;
+        width: 100%;
+        transform: translate(0%, 100%);
+
+        .text-slide {
+          display: flex;
+          width: 180%;
+          justify-content: space-between;
+          white-space: nowrap;
+
+          &.original {
+            @include rolling-origin-right;
+          }
+
+          &.clone {
+            @include rolling-clone-right;
+            margin-right: 1rem;
+          }
+
+          span {
+            @include title-lg;
+            color: $gray-100-color;
+            box-sizing: content-box;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+  .team-con {
+    .inner {
+      padding-bottom: 0;
+      .sub-title {
+        @include title-2xs;
+        color: $primary-color;
+        margin-bottom: 5rem;
+      }
+      .title-wrap {
+        position: relative;
+
+        .title {
+          @include title-md;
+          margin: 0 0 60rem 6rem;
+          z-index: 1;
+          position: relative;
+        }
+
+        .team-img {
+          position: absolute;
+          top: 13rem;
+          width: 100%;
+          height: 65rem;
+          overflow: hidden;
+
+          background: url(../../img/Team_단체.jpg) no-repeat 0% 19% / cover;
+        }
+      }
+
+      .text-wrap {
+        @include text-lg;
+        padding: 10rem 30rem 0 83rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        strong {
+          font-weight: 700;
+        }
+
+        & > *:nth-child(2) {
+          word-break: keep-all;
+        }
+      }
+    }
+  }
+  .member-con {
+    .inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+
+      .member {
+        img {
+          height: 55rem;
+          margin-bottom: 5rem;
+        }
+        .title-wrap {
+          margin-bottom: 3rem;
+          .name {
+            @include text-xl;
+            margin-bottom: 1rem;
+
+            strong {
+              @include title-xs;
+              margin-right: 1.5rem;
+            }
+          }
+          .rank {
+            @include text-md;
+            color: $gray-600-color;
+          }
+        }
+
+        .desc {
+          @include text-lg;
+          color: $gray-800-color;
+
+          &.space {
+            letter-spacing: -0.06rem;
+          }
+        }
+
+        .info {
+          margin-top: 2rem;
+
+          & > * {
+            display: grid;
+            grid-template-columns: 7rem 1fr;
+
+            .info-title {
+              @include text-md;
+              font-weight: 700;
+              line-height: 6rem;
+            }
+
+            .info-list {
+              display: grid;
+              grid-template-rows: repeat(5, 1fr);
+              align-items: center;
+              width: 100%;
+
+              li {
+                @include text-md;
+                align-self: center;
+                height: 6rem;
+                border-bottom: 0.1rem solid $gray-200-color;
+                column-rule: $gray-800-color;
+                line-height: 6rem;
+              }
+            }
+          }
+
+          .task {
+            .info-list {
+              li::before {
+                content: "#";
+                padding-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

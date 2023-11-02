@@ -1,0 +1,265 @@
+/* 서비스안내 스타일시트 */
+@import "../variables";
+@import "../mixins";
+
+main {
+  .service-title {
+    width: 100%;
+    margin: 0 auto;
+
+    .title {
+      @include title-md;
+      padding: $margin-height-large 0 4rem;
+      text-align: center;
+    }
+
+    nav {
+      border-top: 0.1rem solid $gray-200-color;
+      border-bottom: 0.1rem solid $gray-200-color;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .service-link {
+        list-style: none;
+        width: 8.5rem;
+        height: 8rem;
+
+        a {
+          @include text-lg;
+          color: $gray-600-color;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 8rem;
+          cursor: pointer;
+
+          &:hover,
+          &.active {
+            font-weight: 700;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .process-con {
+    .inner {
+      padding: $margin-width-large;
+      .sub-title {
+        @include title-2xs;
+        color: $primary-color;
+      }
+      .title {
+        @include title-sm;
+        margin-bottom: 9rem;
+      }
+      .process {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(30rem, auto));
+        gap: 8rem;
+
+        .process-item {
+          display: flex;
+          flex-direction: column;
+
+          .item-img {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+
+            .icon {
+              width: 6rem;
+              height: 6rem;
+            }
+
+            .arrow {
+              width: 20rem;
+
+              &.last {
+                display: none;
+              }
+            }
+          }
+
+          .item-title {
+            margin: 0 0 2rem 0.5rem;
+            sup {
+              @include caption-text;
+              font-weight: 700;
+              color: $primary-color;
+              margin-right: 1rem;
+            }
+
+            h4 {
+              display: inline;
+              @include title-2xs;
+            }
+          }
+
+          .item-desc {
+            @include text-md;
+            color: $gray-800-color;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+
+      .caution {
+        border-top: 0.1rem solid $gray-200-color;
+        margin-top: 8rem;
+        padding: 3rem 0 0 0.5rem;
+
+        li {
+          @include text-md;
+          color: $gray-800-color;
+
+          span {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .price-con {
+  background-color: $gray-100-color;
+
+  .inner {
+    padding: calc($margin-height-large / 2) $margin-width-large;
+
+    & > .title {
+      @include title-sm;
+      margin-bottom: 9rem;
+
+      small {
+        @include text-md;
+      }
+    }
+
+    .table {
+      & > * > * {
+        display: grid;
+        // 각 표 너비
+
+        &.head {
+          background-color: rgba($color: $gray-200-color, $alpha: 0.5);
+          border-top: 0.1rem solid $gray-400-color;
+          padding: 1.5rem 0;
+
+          h4 {
+            @include text-md;
+            font-weight: 700;
+            text-align: center;
+            align-self: center;
+          }
+        }
+        &.cell {
+          &:not(:first-child) {
+            border-top: 0.1rem solid $gray-400-color;
+          }
+          & > *:not(:first-child) {
+            border-left: 0.1rem solid $gray-400-color;
+          }
+          .title {
+            
+            text-align: center;
+            align-self: center;
+          }
+
+          .price {
+            color: $primary-color;
+            text-align: center;
+            align-self: center;
+          }
+
+          .service {
+            @include text-md;
+            color: $gray-800-color;
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
+      .main-table {
+        display: grid;
+        
+
+        .cell {
+          .title {
+            @include text-lg;
+            font-weight: 700;
+          }
+          .price {
+            @include title-2xs;
+            font-weight: 700;
+          }
+          .note {
+            @include text-sm;
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .work {
+              li {
+                &::before {
+                  content: "-";
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .recommend {
+              position: relative;
+              li {
+                img {
+                  width: 1rem;
+                  height: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .sub-table {
+        display: grid;
+        
+        .title {
+          @include text-md;
+          font-weight: 700;
+        }
+        .price {
+          @include text-md;
+          font-weight: 700;
+
+          small {
+            @include caption-text;
+          }
+        }
+      }
+    }
+
+    .caution {
+      margin: 5rem 0 0 0.5rem;
+
+      li {
+        @include text-md;
+        color: $gray-800-color;
+
+        &::before {
+          content: "#";
+          color: $primary-color;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+}
