@@ -125,141 +125,139 @@ main {
     }
   }
   .price-con {
-  background-color: $gray-100-color;
+    background-color: $gray-100-color;
 
-  .inner {
-    padding: calc($margin-height-large / 2) $margin-width-large;
+    .inner {
+      padding: calc($margin-height-large / 2) $margin-width-large;
 
-    & > .title {
-      @include title-sm;
-      margin-bottom: 9rem;
+      & > .title {
+        @include title-sm;
+        margin-bottom: 9rem;
 
-      small {
-        @include text-md;
+        small {
+          @include text-md;
+        }
       }
-    }
 
-    .table {
-      & > * > * {
-        display: grid;
-        // 각 표 너비
+      .table {
+        border-top: 0.1rem solid $gray-400-color;
+        & > * > * {
+          display: grid;
+          // 각 표 너비
 
-        &.head {
-          background-color: rgba($color: $gray-200-color, $alpha: 0.5);
-          border-top: 0.1rem solid $gray-400-color;
-          padding: 1.5rem 0;
+          &.head {
+            background-color: rgba($color: $gray-200-color, $alpha: 0.5);
+            border-bottom: 0.1rem solid $gray-400-color;
+            padding: 1.5rem 0;
 
-          h4 {
-            @include text-md;
-            font-weight: 700;
-            text-align: center;
-            align-self: center;
+            h4 {
+              @include text-md;
+              font-weight: 700;
+              text-align: center;
+              align-self: center;
+            }
+          }
+          &.cell {
+            &:not(:first-child) {
+              border-bottom: 0.1rem solid $gray-400-color;
+            }
+            & > *:not(:first-child) {
+              border-left: 0.1rem solid $gray-400-color;
+            }
+            .title {
+              text-align: center;
+              align-self: center;
+            }
+
+            .price {
+              color: $primary-color;
+              text-align: center;
+              align-self: center;
+            }
+
+            .service {
+              @include text-md;
+              color: $gray-800-color;
+              padding: 0 3rem;
+              display: flex;
+              align-items: center;
+            }
           }
         }
-        &.cell {
-          &:not(:first-child) {
-            border-top: 0.1rem solid $gray-400-color;
-          }
-          & > *:not(:first-child) {
-            border-left: 0.1rem solid $gray-400-color;
-          }
-          .title {
-            
-            text-align: center;
-            align-self: center;
-          }
 
+        .main-table {
+          display: grid;
+
+          .cell {
+            .title {
+              @include text-lg;
+              font-weight: 700;
+            }
+            .price {
+              @include title-2xs;
+              font-weight: 700;
+            }
+            .note {
+              @include text-sm;
+              padding: 0 3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+
+              .work {
+                li {
+                  &::before {
+                    content: "-";
+                    margin-right: 0.5rem;
+                  }
+                }
+              }
+
+              .recommend {
+                position: relative;
+                li {
+                  img {
+                    width: 1rem;
+                    height: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .sub-table {
+          display: grid;
+
+          .title {
+            @include text-md;
+            font-weight: 700;
+          }
           .price {
+            @include text-md;
+            font-weight: 700;
+
+            small {
+              @include caption-text;
+            }
+          }
+        }
+      }
+
+      .caution {
+        margin: 5rem 0 0 0.5rem;
+
+        li {
+          @include text-md;
+          color: $gray-800-color;
+
+          &::before {
+            content: "#";
             color: $primary-color;
-            text-align: center;
-            align-self: center;
+            margin-right: 0.5rem;
           }
-
-          .service {
-            @include text-md;
-            color: $gray-800-color;
-            padding: 0 3rem;
-            display: flex;
-            align-items: center;
-          }
-        }
-      }
-
-      .main-table {
-        display: grid;
-        
-
-        .cell {
-          .title {
-            @include text-lg;
-            font-weight: 700;
-          }
-          .price {
-            @include title-2xs;
-            font-weight: 700;
-          }
-          .note {
-            @include text-sm;
-            padding: 0 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-            .work {
-              li {
-                &::before {
-                  content: "-";
-                  margin-right: 0.5rem;
-                }
-              }
-            }
-
-            .recommend {
-              position: relative;
-              li {
-                img {
-                  width: 1rem;
-                  height: 1rem;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .sub-table {
-        display: grid;
-        
-        .title {
-          @include text-md;
-          font-weight: 700;
-        }
-        .price {
-          @include text-md;
-          font-weight: 700;
-
-          small {
-            @include caption-text;
-          }
-        }
-      }
-    }
-
-    .caution {
-      margin: 5rem 0 0 0.5rem;
-
-      li {
-        @include text-md;
-        color: $gray-800-color;
-
-        &::before {
-          content: "#";
-          color: $primary-color;
-          margin-right: 0.5rem;
         }
       }
     }
   }
-}
-
 }

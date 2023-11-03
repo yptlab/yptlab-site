@@ -1210,12 +1210,15 @@ main .price-con .inner > .title small {
   line-height: 1.6;
   letter-spacing: -0.032rem;
 }
+main .price-con .inner .table {
+  border-top: 0.1rem solid #e6e6e3;
+}
 main .price-con .inner .table > * > * {
   display: grid;
 }
 main .price-con .inner .table > * > *.head {
   background-color: rgba(238, 238, 240, 0.5);
-  border-top: 0.1rem solid #e6e6e3;
+  border-bottom: 0.1rem solid #e6e6e3;
   padding: 1.5rem 0;
 }
 main .price-con .inner .table > * > *.head h4 {
@@ -1228,7 +1231,7 @@ main .price-con .inner .table > * > *.head h4 {
   align-self: center;
 }
 main .price-con .inner .table > * > *.cell:not(:first-child) {
-  border-top: 0.1rem solid #e6e6e3;
+  border-bottom: 0.1rem solid #e6e6e3;
 }
 main .price-con .inner .table > * > *.cell > *:not(:first-child) {
   border-left: 0.1rem solid #e6e6e3;
