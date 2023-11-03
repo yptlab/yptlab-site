@@ -1126,7 +1126,7 @@ main .process-con .inner .title {
 }
 main .process-con .inner .process {
   display: grid;
-  grid-template-columns: repeat(4, minmax(30rem, auto));
+  grid-template-columns: repeat(4, minmax(30rem, 1fr));
   gap: 8rem;
 }
 main .process-con .inner .process .process-item {
@@ -1175,6 +1175,7 @@ main .process-con .inner .process .process-item .item-desc {
   letter-spacing: -0.032rem;
   color: #444;
   margin-left: 0.5rem;
+  word-break: keep-all;
 }
 main .process-con .inner .caution {
   border-top: 0.1rem solid #eeeef0;
