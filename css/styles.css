@@ -212,7 +212,7 @@ header .menu-wrap .info-wrap .info {
   grid-row-gap: 2rem;
   grid-template-columns: 3fr 2fr;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 0.6rem;
 }
 header .menu-wrap .info-wrap .info .company {
@@ -708,24 +708,36 @@ main .carousel-con {
   max-width: 100%;
   position: relative;
 }
-main .carousel-con .carousel-1 {
+main .carousel-con > * {
   width: 100%;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
-main .carousel-con .carousel-1 .text-swiper {
+main .carousel-con > * .text-swiper {
   width: 100%;
   display: flex;
 }
-main .carousel-con .carousel-1 .text-swiper .text-slide {
+main .carousel-con > * .text-swiper .text-slide {
   display: flex;
-  width: 180%;
+  width: 270%;
   justify-content: space-between;
   white-space: nowrap;
 }
-main .carousel-con .carousel-1 .text-swiper .text-slide.original {
-  animation: 60s linear 0s infinite normal forwards running rollingoriginalleft;
+main .carousel-con > * .text-swiper .text-slide span {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.064rem;
+  color: #f8f8fa;
+  box-sizing: content-box;
+  line-height: 1;
+  font-weight: 800;
+}
+main .carousel-con .carousel-1 {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+main .carousel-con .carousel-1 .text-slide.original {
+  animation: 100s linear 0s infinite normal forwards running rollingoriginalleft;
 }
 @keyframes rollingoriginalleft {
   0% {
@@ -741,8 +753,8 @@ main .carousel-con .carousel-1 .text-swiper .text-slide.original {
     transform: translateX(0);
   }
 }
-main .carousel-con .carousel-1 .text-swiper .text-slide.clone {
-  animation: 60s linear 0s infinite normal none running rollingcloneleft;
+main .carousel-con .carousel-1 .text-slide.clone {
+  animation: 100s linear 0s infinite normal none running rollingcloneleft;
   margin-left: 1rem;
 }
 @keyframes rollingcloneleft {
@@ -753,35 +765,12 @@ main .carousel-con .carousel-1 .text-swiper .text-slide.clone {
     transform: translateX(-200%);
   }
 }
-main .carousel-con .carousel-1 .text-swiper .text-slide span {
-  font-size: 9.6rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: -0.192rem;
-  color: #f8f8fa;
-  box-sizing: content-box;
-  line-height: 1;
-}
 main .carousel-con .carousel-2 {
-  position: relative;
-  width: 100%;
-  height: 10rem;
-}
-main .carousel-con .carousel-2 .text-swiper {
-  display: flex;
-  position: absolute;
   left: -50%;
-  width: 100%;
-  transform: translate(0%, 100%);
+  transform: translate(0%, 130%);
 }
-main .carousel-con .carousel-2 .text-swiper .text-slide {
-  display: flex;
-  width: 180%;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-main .carousel-con .carousel-2 .text-swiper .text-slide.original {
-  animation: 60s linear 0s infinite normal forwards running rollingoriginalright;
+main .carousel-con .carousel-2 .text-slide.original {
+  animation: 100s linear 0s infinite normal forwards running rollingoriginalright;
 }
 @keyframes rollingoriginalright {
   0% {
@@ -797,8 +786,8 @@ main .carousel-con .carousel-2 .text-swiper .text-slide.original {
     transform: translateX(0);
   }
 }
-main .carousel-con .carousel-2 .text-swiper .text-slide.clone {
-  animation: 60s linear 0s infinite normal none running rollingcloneright;
+main .carousel-con .carousel-2 .text-slide.clone {
+  animation: 100s linear 0s infinite normal none running rollingcloneright;
   margin-right: 1rem;
 }
 @keyframes rollingcloneright {
@@ -808,15 +797,6 @@ main .carousel-con .carousel-2 .text-swiper .text-slide.clone {
   100% {
     transform: translateX(0);
   }
-}
-main .carousel-con .carousel-2 .text-swiper .text-slide span {
-  font-size: 9.6rem;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: -0.192rem;
-  color: #f8f8fa;
-  box-sizing: content-box;
-  line-height: 1;
 }
 main .team-con .inner {
   padding-bottom: 0;

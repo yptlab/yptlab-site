@@ -218,7 +218,7 @@ header {
           grid-row-gap: 2rem;
           grid-template-columns: 3fr 2fr;
           justify-content: space-between;
-          align-items: end;
+          align-items: flex-end;
           margin-bottom: 0.6rem;
 
           .company {

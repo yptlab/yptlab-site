@@ -74,11 +74,10 @@ main {
     margin-top: 4rem;
     max-width: 100%;
     position: relative;
-    .carousel-1 {
+
+    & > * {
       width: 100%;
       position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0);
 
       .text-swiper {
         width: 100%;
@@ -86,62 +85,46 @@ main {
 
         .text-slide {
           display: flex;
-          width: 180%;
+          width: 270%;
           justify-content: space-between;
           white-space: nowrap;
 
-          &.original {
-            @include rolling-origin-left;
-          }
-
-          &.clone {
-            @include rolling-clone-left;
-            margin-left: 1rem;
-          }
-
           span {
-            @include title-lg;
+            @include title-md;
             color: $gray-100-color;
             box-sizing: content-box;
             line-height: 1;
+            font-weight: 800;
           }
         }
       }
     }
+    .carousel-1 {
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      .text-slide {
+        &.original {
+          @include rolling-origin-left;
+        }
+
+        &.clone {
+          @include rolling-clone-left;
+          margin-left: 1rem;
+        }
+      }
+    }
     .carousel-2 {
-      position: relative;
-      width: 100%;
-      // background-color: antiquewhite;
-      height: 10rem;
+      left: -50%;
+      transform: translate(0%, 130%);
 
-      .text-swiper {
-        display: flex;
-        position: absolute;
-        left: -50%;
-        width: 100%;
-        transform: translate(0%, 100%);
-
-        .text-slide {
-          display: flex;
-          width: 180%;
-          justify-content: space-between;
-          white-space: nowrap;
-
-          &.original {
-            @include rolling-origin-right;
-          }
-
-          &.clone {
-            @include rolling-clone-right;
-            margin-right: 1rem;
-          }
-
-          span {
-            @include title-lg;
-            color: $gray-100-color;
-            box-sizing: content-box;
-            line-height: 1;
-          }
+      .text-slide {
+        &.original {
+          @include rolling-origin-right;
+        }
+        &.clone {
+          @include rolling-clone-right;
+          margin-right: 1rem;
         }
       }
     }

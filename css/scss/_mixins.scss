@@ -99,7 +99,7 @@
 
 
 @mixin rolling-origin-right {
-  animation: 60s linear 0s infinite normal forwards running rollingoriginalright;
+  animation: 100s linear 0s infinite normal forwards running rollingoriginalright;
 
   @keyframes rollingoriginalright {
     0% {
@@ -121,7 +121,7 @@
 }
 
 @mixin rolling-clone-right {
-  animation: 60s linear 0s infinite normal none running rollingcloneright;
+  animation: 100s linear 0s infinite normal none running rollingcloneright;
 
   @keyframes rollingcloneright {
     0% {
@@ -134,7 +134,7 @@
   }
 }
 @mixin rolling-origin-left {
-  animation: 60s linear 0s infinite normal forwards running rollingoriginalleft;
+  animation: 100s linear 0s infinite normal forwards running rollingoriginalleft;
 
   @keyframes rollingoriginalleft {
     0% {
@@ -156,7 +156,7 @@
 }
 
 @mixin rolling-clone-left {
-  animation: 60s linear 0s infinite normal none running rollingcloneleft;
+  animation: 100s linear 0s infinite normal none running rollingcloneleft;
 
   @keyframes rollingcloneleft {
     0% {
