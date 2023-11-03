@@ -17,18 +17,16 @@ new Waypoint({
 
 // (시작) 메인비주얼 swiper
 let swVisual = new Swiper(".swAboutVisual", {
-  // effect: "fade",
+  effect: "fade",
   loop: true,
-  direction: "vertical",
   speed: 1000,
   autoplay: {
-    delay: 1000,
+    delay: 10000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".pagination",
     type: "fraction",
-  }
-  
+  },
 });
 // (끝) 메인비주얼 swiper
