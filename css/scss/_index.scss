@@ -139,6 +139,7 @@ main {
           .item-desc {
             @include text-lg;
             margin-bottom: 2rem;
+            word-break: keep-all;
           }
           .item-tag {
             display: grid;
