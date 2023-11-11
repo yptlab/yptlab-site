@@ -548,6 +548,7 @@ main .what .inner .item-wrap .item .item-desc {
   line-height: 1.6;
   letter-spacing: -0.02rem;
   margin-bottom: 2rem;
+  word-break: keep-all;
 }
 main .what .inner .item-wrap .item .item-tag {
   display: grid;
