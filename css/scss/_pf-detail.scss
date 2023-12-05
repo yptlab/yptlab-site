@@ -1,0 +1,80 @@
+// 포트폴리오 세부보기
+@import "variables";
+@import "mixins";
+
+main {
+  .info-con {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    padding: 19rem $margin-width-large 0;
+    
+    .title {
+      @include title-md;
+    }
+    
+    .desc-con {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 3rem;
+      margin-top: 0.7rem;
+
+      .desc-title {
+        @include title-2xs;
+      }
+
+      .desc-wrap {
+        margin-top: 0.5rem;
+        
+        .core-work {
+          @include text-lg;
+          border-bottom: 0.1rem solid $gray-200-color;
+          padding-bottom: 3rem;
+          margin-bottom: 3rem;
+
+          li {
+            list-style-position: inside;
+          }
+          
+        }
+        .work-desc {
+          @include text-lg;
+          word-break: keep-all;
+        }
+        .work-info {
+          padding-top: 3rem;
+          display: flex;
+          
+          ul {
+            @include text-md;
+
+            padding-right: 5rem;
+            
+            &:not(:first-child) {
+              border-left: 0.1rem solid $gray-200-color;
+              padding-left: 3rem;
+            }
+
+            .type {
+              color: $gray-600-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .img-con {
+    margin: ($margin-width-large * 1.2) $margin-width-large $margin-height-large ;
+    
+    .mockup {
+      margin-bottom: $margin-width-large;
+      width: 100%;
+    }
+    .more-img {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      width: 100%;
+    }
+  }
+}

@@ -27,22 +27,82 @@
     <meta property="og:image" content="http://yptlab.com/img/ogImage.jpg" />
     <title>윤피티연구소</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="../../img/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../../img/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../../img/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../../img/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../../img/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../../img/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../../img/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../../img/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../img/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../../img/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../img/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../img/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../img/icon/favicon-16x16.png">
-    <link rel="manifest" href="../../img/icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../../img/icon/ms-icon-144x144.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../img/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../img/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../img/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../img/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../img/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../img/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../img/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../img/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../img/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../img/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../img/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../img/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../img/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../img/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="../../img/icon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- font -->
     <link rel="stylesheet" href="../../font/font.css" />
@@ -52,7 +112,11 @@
     <link rel="stylesheet" href="../../css/vendors/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../../css/styles.css" />
   </head>
-  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <body
+    oncontextmenu="return false"
+    ondragstart="return false"
+    onselectstart="return false"
+  >
     <!-- 헤더 -->
     <header>
       <nav class="inner">
@@ -71,10 +135,10 @@
               <a href="../about.html">회사소개</a>
             </li>
             <li>
-              <a href="./consulting.html">사업영역</a>
+              <a href="../business/making.html">사업영역</a>
             </li>
             <li>
-              <a href="../portfolio/portfolio.html">포트폴리오</a>
+              <a href="./portfolio.html"">포트폴리오</a>
             </li>
             <li>
               <a href="../service/making.html">서비스안내</a>
@@ -134,62 +198,27 @@
     <!-- // 헤더 -->
     <!-- 메인 -->
     <main>
-      <section class="business-title">
-        <h3 class="title">사업영역</h3>
-        <nav>
-          <li class="business-link"><a href="./making.html">제작</a></li>
-          <li class="business-link"><a href="./lecture.html">강의</a></li>
-          <li class="business-link"><a href="#" class="active">컨설팅</a></li>
-          <li class="business-link alert"><a href="#">행사</a></li>
-        </nav>
+      <section class="portfolio-title">
+        <h3 class="title">works</h3>
+        <ul class="filter">
+          <li class="filter-item active" data-filter="all">전체</li>
+          <li class="filter-item" data-filter="profile">소개서 및 제안서</li>
+          <li class="filter-item" data-filter="deck">발표자료</li>
+          <li class="filter-item" data-filter="personal">개인 포트폴리오</li>
+          <li class="filter-item" data-filter="etc">기타</li>
+        </ul>
       </section>
-      <section class="reason-wrap">
-        <div class="inner">
-          <h5 class="mini-title">왜 윤피티연구소에 컨설팅을 맡겨야 하는가?</h5>
-          <section class="reason reason-1">
-            <h3 class="title">기획부터 디자인까지, 논스톱 서비스</h3>
-            <span class="desc">
-              기획컨설팅부터 디자인컨설팅까지 폭넓게 컨설팅 분야를 다루고
-              있습니다. <br />
-              윤피티연구소는 컨설팅부터 디자인 제작까지 논스톱 서비스를
-              제공합니다. <br />
-              기획과 제작 그리고 프레젠테이션까지 모두 윤피티연구소에서
-              만나보세요.
-            </span>
-            <img
-              src="../../img/business_3_1.jpg"
-              alt="설계를 통한 기획부터 디자인까지, 논스톱 서비스"
-            />
-          </section>
-          <section class="reason reason-2">
-            <h3 class="title">디테일이 다른 컨설팅!</h3>
-            <span class="desc">
-              내용과 디자인을 보는 것 뿐만 아니라 시장, 트렌드, 경쟁력, 차별점
-              등 넓은 범위를 다루며 <br />
-              클라이언트가 보지 못한 부분들도 우리들의 경험을 살려 디테일한
-              부분까지 고려합니다.<br />
-              윤피티연구소의 디테일한 토탈솔루션을 받아가세요.
-            </span>
-            <img src="../../img/business_3_2.jpg" alt="수 많은 클라이언트" />
-          </section>
-          <section class="reason reason-3">
-            <h3 class="title">실패와 성공의 경험</h3>
-            <span class="desc">
-              대학시절부터 지금까지 여러 방면의 프로젝트를 진행했습니다. <br />
-              도전,실패,성공 다양한 결과를 마주했고 이 경험들을 컨설팅에
-              담겠습니다. <br />
-              실패는 거울삼고, 성공은 귀감삼아 여러분의 여정을 밝게 비추는
-              키잡이 역할이 되겠습니다.
-            </span>
-            <img
-              src="../../img/business_3_3.jpg"
-              alt="실패와 성공의 경험으로 나아가는 미래"
-            />
-          </section>
+      <section class="portfolio-item-con">
+        <div class="item item-1">
+          <a href="./detail.html" class="img-wrap">
+            <img src="https://via.placeholder.com/553x311" alt="디자인" class="img" />
+          </a>
+          <h4 class="item-title">SKT 신사업 런칭 소개서</h4>
         </div>
       </section>
     </main>
-    <!-- // 메인 -->
+    <!-- //메인 -->
+    <!-- 푸터 -->
     <footer>
       <section class="company">
         <h4>윤피티연구소</h4>
@@ -215,7 +244,7 @@
         </nav>
       </section>
       <section class="next">
-        <a href="../portfolio/portfolio.html">next</a>
+        <a href="../service/making.html">next</a>
       </section>
       <section class="info-wrap">
         <div class="info left">
@@ -251,7 +280,6 @@
       </div>
     </footer>
     <!-- // 푸터 -->
-    <!-- // 전체레이아웃 -->
     <!-- waypoint -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"

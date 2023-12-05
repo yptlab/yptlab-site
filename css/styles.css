@@ -1034,6 +1034,189 @@ main .reason-wrap .inner #curriculum img {
   margin-top: 6rem;
 }
 
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 폰트 스타일(size, weight, line-height...) */
+main .portfolio-title {
+  width: 100%;
+  margin: 0 auto;
+}
+main .portfolio-title .title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.064rem;
+  padding: 24rem 0 4rem;
+  text-align: center;
+}
+main .portfolio-title ul.filter {
+  border-top: 0.1rem solid #eeeef0;
+  border-bottom: 0.1rem solid #eeeef0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .portfolio-title ul.filter .filter-item {
+  list-style: none;
+  width: 13rem;
+  height: 8rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.02rem;
+  color: #888;
+  display: block;
+  text-align: center;
+  line-height: 8rem;
+  cursor: pointer;
+}
+main .portfolio-title ul.filter .filter-item:hover, main .portfolio-title ul.filter .filter-item.active {
+  font-weight: 700;
+  color: #1d68fd;
+}
+main .portfolio-item-con {
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  row-gap: 4rem;
+}
+main .portfolio-item-con .item .img-wrap {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+}
+main .portfolio-item-con .item .img-wrap::before {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.064rem;
+  transition: all 0.3s ease;
+  color: #fff;
+  content: "+";
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.8);
+}
+main .portfolio-item-con .item .img-wrap:hover::before {
+  display: flex;
+}
+main .portfolio-item-con .item .item-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.02rem;
+  color: #222;
+  padding-top: 3rem;
+  padding-left: 0.4rem;
+}
+
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 마진(margin) */
+/* 색상표 */
+/* 폰트 */
+/* 폰트 사이즈 */
+/* 트랜지션(transition) */
+/* 폰트 스타일(size, weight, line-height...) */
+main .info-con {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding: 19rem 10rem 0;
+}
+main .info-con .title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.064rem;
+}
+main .info-con .desc-con {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  margin-top: 0.7rem;
+}
+main .info-con .desc-con .desc-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.024rem;
+}
+main .info-con .desc-con .desc-wrap {
+  margin-top: 0.5rem;
+}
+main .info-con .desc-con .desc-wrap .core-work {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.02rem;
+  border-bottom: 0.1rem solid #eeeef0;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+main .info-con .desc-con .desc-wrap .core-work li {
+  list-style-position: inside;
+}
+main .info-con .desc-con .desc-wrap .work-desc {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.02rem;
+  word-break: keep-all;
+}
+main .info-con .desc-con .desc-wrap .work-info {
+  padding-top: 3rem;
+  display: flex;
+}
+main .info-con .desc-con .desc-wrap .work-info ul {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.032rem;
+  padding-right: 5rem;
+}
+main .info-con .desc-con .desc-wrap .work-info ul:not(:first-child) {
+  border-left: 0.1rem solid #eeeef0;
+  padding-left: 3rem;
+}
+main .info-con .desc-con .desc-wrap .work-info ul .type {
+  color: #888;
+}
+main .img-con {
+  margin: 12rem 10rem 24rem;
+}
+main .img-con .mockup {
+  margin-bottom: 10rem;
+  width: 100%;
+}
+main .img-con .more-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+}
+
 /* 서비스안내 스타일시트 */
 /* 마진(margin) */
 /* 색상표 */
