@@ -1,0 +1,89 @@
+// 포트폴리오 영역 스타일 시트
+@import "variables";
+@import "mixins";
+
+main {
+  .portfolio-title {
+    width: 100%;
+    margin: 0 auto;
+
+    .title {
+      @include title-md;
+      padding: $margin-height-large 0 4rem;
+      text-align: center;
+    }
+
+    ul.filter {
+      border-top: 0.1rem solid $gray-200-color;
+      border-bottom: 0.1rem solid $gray-200-color;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .filter-item {
+        list-style: none;
+        width: 13rem;
+        height: 8rem;
+
+        @include text-lg;
+        color: $gray-600-color;
+        display: block;
+        text-align: center;
+        line-height: 8rem;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+          font-weight: 700;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .portfolio-item-con {
+    padding: $margin-width-large;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 4rem;
+
+    .item {
+      .img-wrap {
+        position: relative;
+        cursor: pointer;
+        display: block; 
+        transition: all 0.3s ease;
+        
+        &::before {
+          @include title-md;
+          transition: all 0.3s ease;
+          color: $white-color;
+          content: "+";
+          position: absolute;
+          display: none;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba($color: $black-color, $alpha: 0.8)
+        }
+        &:hover {
+          &::before {
+            display: flex;
+          }
+        }
+      }
+      .item-title {
+        @include text-lg;
+        color: #222;
+        padding-top: 3rem;
+        padding-left: 0.4rem;
+      }
+    }
+  }
+}

@@ -8,6 +8,11 @@ body {
 main {
   .inner {
     padding: $margin-height-large $margin-width-large;
+    
+    @include mobile {
+      padding: ($margin-height-large * 0.5) ($margin-width-large * 0.3);
+
+    }
   }
   /* visual */
   .main-visual {
@@ -41,6 +46,7 @@ main {
 
           .swvisual-title {
             position: relative;
+            width: 100%;
             .title {
               @include title-lg;
               line-height: $line-height-xs;
@@ -131,6 +137,8 @@ main {
         .item {
           .img-wrap {
             margin-bottom: 5rem;
+
+            img {width: 100%;}
           }
           .item-title {
             @include title-xs;
@@ -208,12 +216,131 @@ main {
       gap: 3rem;
 
       .logo-item {
-        width: 22rem;
+        width: 100%;
         height: 9rem;
         background-color: $gray-100-color;
+
+        .logo-img {
+          width: 100%;
+        }
       }
     }
   }
-
   /* // 파트너사 */
+
+  @include mobile {
+    // visual 시작
+    .main-visual {
+      .swvisual{
+        .swiper-slide {
+          .inner {
+            padding: ($margin-height-large * 0.5) ($margin-width-large * 0.3);
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            row-gap: 8rem;
+
+            .swvisual-title {
+              .title {
+                font-size: clamp(3rem, 6.25vw, 4.8rem);
+              }
+              &.title-wrap-1,
+              &.title-wrap-3 {
+                .title-1 {
+                  padding-left: 12%;
+                }
+                .title-3 {
+                  padding-left: 20%;
+                }
+              }
+              &.title-wrap-2 {
+                .title-1,
+                .title-2 {
+                  padding-left: 12%;
+                }
+                .title-3 {
+                  padding-left: 20%;
+                }
+              }
+
+              .line {
+                &.line-1 {
+                  width: 16%;
+                  right: 24%;
+                  bottom: 45%;
+                }
+  
+                &.line-2 {
+                  width: 7%;
+                  top: 16%;
+                  left: 0%;
+                }
+  
+                &.line-3 {
+                  width: 14%;
+                  right: 32%;
+                  bottom: 13%;
+                }
+              }
+            }
+            .swvisual-desc {
+              margin-bottom: 0;
+              margin-left: 50%;
+            }
+          }
+        }
+      }
+    }
+    // visual 끝
+
+    // what to do 시작
+    .what {
+      .inner {
+        grid-template-columns: none;
+        row-gap: 4rem;
+
+        .item-wrap {
+          grid-template-columns: repeat(1, 1fr);
+
+          .item {
+            .item-title {
+              margin-bottom: 2rem;
+            }
+            .item-tag {
+              column-gap: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+    // what to do 끝
+
+    // slogan 시작
+    .slogan {
+      height: auto;
+
+      .inner {
+        row-gap: 4rem;
+
+        .title {
+          @include title-sm;
+        }
+      }
+    }
+    // slogan 끝
+    
+    // 파트너사 시작
+    .partners {
+      .partners-logo {
+        grid-template-columns: repeat(3, auto);
+        gap: 1rem;
+
+        .logo-item {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    // 파트너사 끝
+  }
 }

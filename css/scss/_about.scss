@@ -10,12 +10,17 @@ main {
       .sw-page {
         z-index: 9;
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
         @include text-lg;
         font-weight: 700;
-        bottom: 37rem;
+        bottom: 26rem;
         left: 10rem;
         color: $gray-600-color;
         width: max-content;
+
 
         .swiper-pagination-current {
           color: $white-color;
@@ -48,6 +53,10 @@ main {
           .swvisual-title {
             @include title-md;
             color: $white-color;
+
+            .mobile {
+              display: none;
+            }
           }
         }
         .slide-img {
@@ -74,6 +83,8 @@ main {
     margin-top: 4rem;
     max-width: 100%;
     position: relative;
+    height: 14rem;
+    overflow: hidden;
 
     & > * {
       width: 100%;
@@ -185,8 +196,9 @@ main {
 
       .member {
         img {
-          height: 55rem;
+          // height: 55rem;
           margin-bottom: 5rem;
+          width: 100%;
         }
         .title-wrap {
           margin-bottom: 3rem;
@@ -245,6 +257,7 @@ main {
           }
 
           .task {
+            margin-top: 2rem;
             .info-list {
               grid-template-rows: repeat(3, 1fr);
               li::before {
@@ -256,5 +269,97 @@ main {
         }
       }
     }
+
+  }
+  @include mobile {
+    // 비주얼 시작
+    .about-visual {
+      .swvisual-control {
+        .sw-page {
+
+          left: 3rem;
+          bottom: 35.5rem;
+        }
+      }
+      .swAboutVisual {
+        .swiper-slide {
+          .inner {
+            padding: ($margin-height-large * 0.5) ($margin-height-large * 0.5) $margin-height-large;
+
+            .swvisual-title {
+              font-size: clamp(2.5rem, 6vw, 4.8rem);
+
+              .mobile {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+    // 비주얼 끝
+
+    // text 시작 
+    .carousel-con {
+      height: 11rem;
+      
+      .text-swiper {
+        .text-slide {
+          width: 500%;
+          &.original {background-color: white;}
+          &.clone {background-color: white;}
+        }
+      }
+    }
+    // text 끝
+    // team 시작
+    .team-con {
+      .inner {
+        .sub-title {
+          margin-bottom: 4rem;
+        }
+
+        .title-wrap {
+          .title {
+            margin-left: 6%;
+          }
+
+          .team-img {
+            top: 10rem;
+            background-position: center;
+          }
+        }
+
+        .text-wrap {
+          padding: 6rem 3rem 0 9rem;
+        }
+      }
+    }
+    // team끝
+
+    // member 시작
+    .member-con {
+      .inner {
+        grid-template-columns: 1fr;
+
+        .member {
+          .info {
+            & > * {
+              .info-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                
+                li {
+                  width: 100%;
+                  align-self: flex-start;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // member 끝
   }
 }

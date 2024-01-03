@@ -26,7 +26,8 @@ let swVisual = new Swiper(".swAboutVisual", {
   },
   pagination: {
     el: ".pagination",
-    type: "fraction",
+    clickable: true, // 버튼 클릭 여부
+    type: "bullets",
   },
 });
 // (끝) 메인비주얼 swiper
