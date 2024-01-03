@@ -16,11 +16,18 @@ span {
 html {
   // font-size: 10px;
   font-size: 0.5208vw;
+  
+  @include mobile {
+    font-size: 10px;
+    // font-size: 1.3021vw;
+  }
 }
 body {
   position: relative;
   font-family: $font;
   height: 100%;
+  // 임시) 코딩 완료 후 삭제 예정
+  overflow-x: hidden;
 
   &.no-scroll {
     overflow-y: hidden;
@@ -50,10 +57,14 @@ header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-
+    
     transition: transform 0.3s ease;
     --webkit-transform: all 0.3s ease;
     // background-color: #333;
+    
+    @include mobile {
+      padding: 1.8rem 3rem;
+    }
 
     .logo {
       width: 12.5rem;
@@ -62,6 +73,7 @@ header {
       transition: background 0.6s ease;
       --webkit-transform: background 0.6s ease;
     }
+    
     .hamburger {
       width: 4rem;
       height: 4rem;
@@ -258,6 +270,30 @@ header {
         }
       }
     }
+
+    @include mobile {
+        padding: 0 3rem;
+
+        &-wrap {
+          grid-template-columns: none;
+          grid-template-rows: 1fr 1fr;
+          height: 65%;
+
+          .info-wrap {
+            justify-content: end;
+
+            .slogan {
+              display: none;
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              margin-bottom: 0;
+            }
+          }
+      }
+    }
   }
 }
 /* // header */
@@ -324,7 +360,7 @@ footer {
       &::after {
         content: "";
         position: absolute;
-        background-image: url(../../img/footer-arrow.png);
+        background: url(../../img/footer-arrow.png) no-repeat;
         background-size: 13rem 13rem;
         right: -60%;
         top: 18%;
@@ -345,6 +381,7 @@ footer {
     display: grid;
     grid-template-columns: 7fr 5fr;
     margin-bottom: 3rem;
+    width: 100%;
 
     .info {
       align-items: end;
@@ -404,6 +441,70 @@ footer {
     span {
       @include caption-text;
       color: $gray-200-color;
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding: ($margin-width-large * 1.2) 3rem;
+    height: 100vh;
+    align-items: start;
+    justify-content: space-between;
+
+    .company {
+      order: 1;
+
+      .sns_link {
+        margin-top: 4rem;
+      }
+    }
+
+    .next {
+      order: 0;
+
+      a {
+        font-size: 12rem;
+
+        &::after {
+          background-size: 10rem 10rem;
+          width: 10rem;
+          height: 10rem;
+          top: 22%;
+        }
+      }
+    }
+
+    .info-wrap {
+      order: 2;
+      grid-template-columns: 1fr 1fr;
+
+      .info {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 1rem;
+
+        &.right {
+          .ul-item {
+            margin-left: 0;
+
+            ul:first-child {
+              margin-bottom: 1rem;
+            }
+          }
+
+          & > .desc {
+            position: absolute;
+            bottom: 3rem;
+            left: 3rem;
+          }
+        }
+      }
+    }
+
+    .goTop {
+      right: 3rem;
+      top: 3rem;
     }
   }
 }

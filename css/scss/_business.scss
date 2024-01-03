@@ -94,6 +94,10 @@ main {
           margin-top: 6rem;
         }
       }
+
+      @include mobile {
+        padding: calc($margin-height-large / 4) calc($margin-width-large * 0.3);
+      }
     }
   }
 }
