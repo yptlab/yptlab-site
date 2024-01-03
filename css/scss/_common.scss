@@ -19,7 +19,7 @@ html {
   
   @include mobile {
     // font-size: 10px;
-    font-size: clamp(6px, 1.3021vw, 10px);
+    font-size: clamp(7.5px, 1.3021vw, 10px);
     // font-size: 1.3021vw;
   }
 }
