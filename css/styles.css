@@ -38,7 +38,7 @@ html {
 }
 @media (max-width: 768px) {
   html {
-    font-size: clamp(6px, 1.3021vw, 10px);
+    font-size: clamp(7.5px, 1.3021vw, 10px);
   }
 }
 
@@ -783,6 +783,7 @@ main .slogan .inner span {
   line-height: 1.6;
   letter-spacing: -0.02rem;
   color: #fff;
+  text-align: center;
 }
 @media (max-width: 768px) {
   main .slogan .inner span {
@@ -1269,12 +1270,13 @@ main .member-con .inner .member .info > * .info-list li {
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.032rem;
-  align-self: center;
   height: 6rem;
   border-bottom: 0.1rem solid #eeeef0;
   -moz-column-rule: #444;
        column-rule: #444;
-  line-height: 6rem;
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
 }
 @media (max-width: 768px) {
   main .member-con .inner .member .info > * .info-list li {
@@ -2578,7 +2580,7 @@ main .price-con .caution li::before {
   }
 }
 #consulting-table .sub-table {
-  grid-template-rows: auto repeat(2, 12rem);
+  grid-template-rows: auto repeat(2, 1fr);
 }
 #consulting-table .sub-table .price {
   display: flex;

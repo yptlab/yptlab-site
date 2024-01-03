@@ -192,6 +192,7 @@ main {
       span {
         @include text-lg;
         color: $white-color;
+        text-align: center;
       }
     }
   }

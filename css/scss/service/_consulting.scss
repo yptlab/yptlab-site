@@ -20,7 +20,8 @@
     }
   }
   .sub-table {
-    grid-template-rows: auto repeat(2, 12rem);
+    // grid-template-rows: auto repeat(2, 12rem);
+    grid-template-rows: auto repeat(2, 1fr);
 
     .price {
       display: flex;

@@ -247,11 +247,13 @@ main {
 
               li {
                 @include text-md;
-                align-self: center;
                 height: 6rem;
                 border-bottom: 0.1rem solid $gray-200-color;
                 column-rule: $gray-800-color;
-                line-height: 6rem;
+                // line-height: 6rem;
+                display: flex;
+                align-items: center;
+                word-break: keep-all;
               }
             }
           }
