@@ -182,7 +182,7 @@ main {
                 word-break: break-all;
               }
             }
-            
+
             .price {
               color: $primary-color;
               text-align: center;
@@ -246,39 +246,34 @@ main {
 
         .sub-table {
           display: grid;
-            grid-column: 1 / 6 !important;
-          }
-          .title {
-            @include text-md;
-            font-weight: 700;
-          }
-          .price {
-            @include text-md;
-            font-weight: 700;
+          grid-column: 1 / 6 !important;
+        }
+        .title {
+          @include text-md;
+          font-weight: 700;
+        }
+        .price {
+          @include text-md;
+          font-weight: 700;
 
-            small {
-              @include caption-text;
-            }
-          }
-
-          .service {
-            grid-column: 3 / 6;
+          small {
+            @include caption-text;
           }
         }
       }
+    }
 
-      .caution {
-        margin: 5rem 0 0 0.5rem;
+    .caution {
+      margin: 5rem 0 0 0.5rem;
 
-        li {
-          @include text-md;
-          color: $gray-800-color;
+      li {
+        @include text-md;
+        color: $gray-800-color;
 
-          &::before {
-            content: "#";
-            color: $primary-color;
-            margin-right: 0.5rem;
-          }
+        &::before {
+          content: "#";
+          color: $primary-color;
+          margin-right: 0.5rem;
         }
       }
     }
@@ -290,11 +285,11 @@ main {
         padding: 20rem 0 4rem;
       }
     }
-
+  
     .process-con {
       .inner {
         padding: ($margin-height-large * 0.5) 3rem;
-
+  
         .sub-title {
           margin-bottom: 2rem;
         }
@@ -304,36 +299,36 @@ main {
         .process {
           grid-template-columns: 1fr;
           gap: 3rem;
-
+  
           .process-item {
             display: grid;
             grid-template-columns: 6rem 1fr;
             column-gap: 3rem;
-
+  
             .item-img {
               grid-row: 1 / 3;
-
+  
               .arrow {
                 display: none;
               }
             }
-
+  
             .item-title {
               margin-top: 2rem;
             }
           }
         }
-
+  
         .caution {
           margin-top: 6rem;
         }
       }
     }
-
+  
     .price-con {
       .inner {
         padding: calc($margin-height-large / 2) 3rem;
-
+  
         & > .title {
           margin-bottom: 6rem;
         }
@@ -341,3 +336,4 @@ main {
     }
   }
 }
+

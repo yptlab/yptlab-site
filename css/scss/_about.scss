@@ -83,6 +83,8 @@ main {
     margin-top: 4rem;
     max-width: 100%;
     position: relative;
+    height: 14rem;
+    overflow: hidden;
 
     & > * {
       width: 100%;
@@ -297,6 +299,19 @@ main {
     }
     // 비주얼 끝
 
+    // text 시작 
+    .carousel-con {
+      height: 11rem;
+      
+      .text-swiper {
+        .text-slide {
+          width: 500%;
+          &.original {background-color: white;}
+          &.clone {background-color: white;}
+        }
+      }
+    }
+    // text 끝
     // team 시작
     .team-con {
       .inner {

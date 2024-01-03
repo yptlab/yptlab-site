@@ -46,6 +46,7 @@ body {
   position: relative;
   font-family: "SUIT", -apple-system, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, sans-serif;
   height: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 body.no-scroll {
@@ -1013,6 +1014,8 @@ main .carousel-con {
   margin-top: 4rem;
   max-width: 100%;
   position: relative;
+  height: 14rem;
+  overflow: hidden;
 }
 main .carousel-con > * {
   width: 100%;
@@ -1301,6 +1304,18 @@ main .member-con .inner .member .info .task .info-list li::before {
   }
   main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title .mobile {
     display: block;
+  }
+  main .carousel-con {
+    height: 11rem;
+  }
+  main .carousel-con .text-swiper .text-slide {
+    width: 500%;
+  }
+  main .carousel-con .text-swiper .text-slide.original {
+    background-color: white;
+  }
+  main .carousel-con .text-swiper .text-slide.clone {
+    background-color: white;
   }
   main .team-con .inner .sub-title {
     margin-bottom: 4rem;
@@ -2076,8 +2091,9 @@ main .price-con .inner .table .main-table .cell .note .recommend li img {
 }
 main .price-con .inner .table .sub-table {
   display: grid;
+  grid-column: 1/6 !important;
 }
-main .price-con .inner .table .sub-table .title {
+main .price-con .inner .table .title {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2085,11 +2101,11 @@ main .price-con .inner .table .sub-table .title {
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  main .price-con .inner .table .sub-table .title {
+  main .price-con .inner .table .title {
     font-size: 1.8rem;
   }
 }
-main .price-con .inner .table .sub-table .price {
+main .price-con .inner .table .price {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2097,28 +2113,25 @@ main .price-con .inner .table .sub-table .price {
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  main .price-con .inner .table .sub-table .price {
+  main .price-con .inner .table .price {
     font-size: 1.8rem;
   }
 }
-main .price-con .inner .table .sub-table .price small {
+main .price-con .inner .table .price small {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.012rem;
 }
 @media (max-width: 768px) {
-  main .price-con .inner .table .sub-table .price small {
+  main .price-con .inner .table .price small {
     font-size: 1.4rem;
   }
 }
-main .price-con .inner .table .sub-table .service {
-  grid-column: 3/6;
-}
-main .price-con .inner .caution {
+main .price-con .caution {
   margin: 5rem 0 0 0.5rem;
 }
-main .price-con .inner .caution li {
+main .price-con .caution li {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2126,11 +2139,11 @@ main .price-con .inner .caution li {
   color: #444;
 }
 @media (max-width: 768px) {
-  main .price-con .inner .caution li {
+  main .price-con .caution li {
     font-size: 1.8rem;
   }
 }
-main .price-con .inner .caution li::before {
+main .price-con .caution li::before {
   content: "#";
   color: #1d68fd;
   margin-right: 0.5rem;
@@ -2578,6 +2591,9 @@ main .price-con .inner .caution li::before {
   #consulting-table .sub-table .price {
     flex-direction: column;
   }
+}
+#consulting-table .sub-table .service {
+  grid-column: 3/6;
 }
 
 /* 마진(margin) */

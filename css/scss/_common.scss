@@ -27,7 +27,7 @@ body {
   position: relative;
   font-family: $font;
   height: 100%;
-  // 임시) 코딩 완료 후 삭제 예정
+  max-width: 100%;
   overflow-x: hidden;
 
   &.no-scroll {
