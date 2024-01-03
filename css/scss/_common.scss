@@ -18,8 +18,8 @@ html {
   font-size: 0.5208vw;
   
   @include mobile {
-    font-size: 10px;
-    font-size: clamp(7px, 1.3021vw, 10px);
+    // font-size: 10px;
+    font-size: clamp(6px, 1.3021vw, 10px);
     // font-size: 1.3021vw;
   }
 }
