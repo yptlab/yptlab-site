@@ -51,7 +51,6 @@
         }
 
         .question {
-          
           border-bottom: 0.1rem solid $gray-200-color;
 
           cursor: pointer;
@@ -107,6 +106,52 @@
           }
         }
       }
+    }
+  }
+
+  @include mobile {
+    .inner {
+      padding: calc($margin-height-large * 0.5) 3rem;
+
+      .sub-title {
+        margin-bottom: 2rem;
+      }
+      & > .title {
+        margin-bottom: 6rem;
+      }
+
+      .filter {
+        .filter-item {
+          padding: 0 1.5rem;
+        }
+      }
+      .faq-area {
+        .faq-item {
+          & > * {
+            grid-template-columns:  5rem 1fr 6rem;
+
+            .type {
+              padding: 2.4rem 1.5rem;
+            }
+          }
+
+          .question {
+            .title {
+              padding: 2.4rem 1.5rem;
+            }
+            .more-btn{
+              margin: 2.4rem 1.5rem;
+            }
+          }
+
+          .answer {
+            .text-wrap {
+              padding: 2.4rem 1.5rem;
+            }
+          }
+        }
+      }
+  
     }
   }
 }

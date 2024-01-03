@@ -8,15 +8,31 @@
   .main-table {
     grid-template-rows: auto repeat(3, 16rem);
     .price {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
 
-      line-height: 16rem;
+      @include mobile {
+        flex-direction: column;
+      }
     }
   }
   .sub-table {
     grid-template-rows: auto repeat(2, 12rem);
 
     .price {
-      line-height: 12rem;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
   }
+  
 }
