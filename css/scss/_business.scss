@@ -64,6 +64,10 @@ main {
         .title {
           @include title-md;
           margin-bottom: 3rem;
+          
+          br {
+            display: none;
+          }
         }
         .desc {
           @include text-lg;
@@ -95,8 +99,64 @@ main {
         }
       }
 
-      @include mobile {
-        padding: calc($margin-height-large / 4) calc($margin-width-large * 0.3);
+    }
+  }
+  @include mobile {
+    .business-title {
+      .title {
+        padding: 20rem 0 4rem;
+      }
+    }
+    .reason-wrap {
+      .inner {
+        padding: ($margin-height-large * 0.5) ($margin-width-large * 0.3);
+
+        .reason {
+          &:not(:last-child) {
+            margin-bottom: $margin-height-large * 0.5;
+          }
+          .title {
+            @include title-md;
+            margin-bottom: 3rem;
+
+            br {
+              display: block;
+            }
+          }
+          .desc {
+            br{
+              @media (max-width: 420px) {
+                display: none;
+              }
+            }
+          }
+  
+          img {
+            margin-top: 6rem;
+          }
+        }
+
+        #curriculum {
+          .desc-wrap {
+            position: static;
+            text-align: center;
+
+            br {
+              &.mobile {
+                display: none;
+              }
+            }
+  
+            .desc {
+              &:first-child {
+                margin-bottom: 3rem;
+              }
+            }
+          }
+          img {
+            margin-top: 6rem;
+          }
+        }
       }
     }
   }

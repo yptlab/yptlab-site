@@ -1426,6 +1426,9 @@ main .reason-wrap .inner .reason .title {
     font-size: 4.8rem;
   }
 }
+main .reason-wrap .inner .reason .title br {
+  display: none;
+}
 main .reason-wrap .inner .reason .desc {
   font-size: 2rem;
   font-weight: 400;
@@ -1457,8 +1460,54 @@ main .reason-wrap .inner #curriculum img {
   margin-top: 6rem;
 }
 @media (max-width: 768px) {
+  main .business-title .title {
+    padding: 20rem 0 4rem;
+  }
   main .reason-wrap .inner {
-    padding: 6rem 3rem;
+    padding: 12rem 3rem;
+  }
+  main .reason-wrap .inner .reason:not(:last-child) {
+    margin-bottom: 12rem;
+  }
+  main .reason-wrap .inner .reason .title {
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.064rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  main .reason-wrap .inner .reason .title {
+    font-size: 4.8rem;
+  }
+}
+@media (max-width: 768px) {
+  main .reason-wrap .inner .reason .title br {
+    display: block;
+  }
+}
+@media (max-width: 768px) and (max-width: 420px) {
+  main .reason-wrap .inner .reason .desc br {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  main .reason-wrap .inner .reason img {
+    margin-top: 6rem;
+  }
+  main .reason-wrap .inner #curriculum .desc-wrap {
+    position: static;
+    text-align: center;
+  }
+  main .reason-wrap .inner #curriculum .desc-wrap br.mobile {
+    display: none;
+  }
+  main .reason-wrap .inner #curriculum .desc-wrap .desc:first-child {
+    margin-bottom: 3rem;
+  }
+  main .reason-wrap .inner #curriculum img {
+    margin-top: 6rem;
   }
 }
 
