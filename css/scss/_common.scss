@@ -19,6 +19,7 @@ html {
   
   @include mobile {
     font-size: 10px;
+    font-size: clamp(7px, 1.3021vw, 10px);
     // font-size: 1.3021vw;
   }
 }
@@ -67,6 +68,7 @@ header {
     }
 
     .logo {
+      align-self: center;
       width: 12.5rem;
       height: 3rem;
       background: url(../../img/logo_black.png) no-repeat left/contain;
@@ -290,6 +292,13 @@ header {
               flex-direction: column;
               align-items: flex-start;
               margin-bottom: 0;
+
+              .sns_link {
+                a {
+                  width: 5rem;
+                  height: 5rem;
+                }
+              }
             }
           }
       }
@@ -447,8 +456,9 @@ footer {
   @include mobile {
     display: flex;
     flex-direction: column;
-    padding: ($margin-width-large * 1.2) 3rem;
-    height: 100vh;
+    padding: ($margin-height-large * 0.5) 3rem;
+    height: auto;
+    row-gap: $margin-height-large * 0.5;
     align-items: start;
     justify-content: space-between;
 

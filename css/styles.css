@@ -39,6 +39,7 @@ html {
 @media (max-width: 768px) {
   html {
     font-size: 10px;
+    font-size: clamp(7px, 1.3021vw, 10px);
   }
 }
 
@@ -82,6 +83,7 @@ header .inner {
   }
 }
 header .inner .logo {
+  align-self: center;
   width: 12.5rem;
   height: 3rem;
   background: url(../../img/logo_black.png) no-repeat left/contain;
@@ -306,6 +308,10 @@ header .menu-wrap .info-wrap .info .sns_link a:not(:last-child) {
     align-items: flex-start;
     margin-bottom: 0;
   }
+  header .menu-wrap .info-wrap .info .sns_link a {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 /* // header */
@@ -480,7 +486,8 @@ footer .goTop span {
     display: flex;
     flex-direction: column;
     padding: 12rem 3rem;
-    height: 100vh;
+    height: auto;
+    row-gap: 12rem;
     align-items: start;
     justify-content: space-between;
   }
