@@ -286,9 +286,6 @@ main {
             .swvisual-desc {
               margin-bottom: 0;
               margin-left: 50%;
-              .desc {
-                
-              }
             }
           }
         }
@@ -324,7 +321,7 @@ main {
 
       .inner {
         row-gap: 4rem;
-        
+
         .title {
           @include title-sm;
         }

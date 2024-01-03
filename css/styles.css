@@ -932,12 +932,15 @@ main .about-visual {
 main .about-visual .swvisual-control .sw-page {
   z-index: 9;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.02rem;
   font-weight: 700;
-  bottom: 37rem;
+  bottom: 26rem;
   left: 10rem;
   color: #888;
   width: -moz-max-content;
@@ -986,6 +989,9 @@ main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
   main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
     font-size: 4.8rem;
   }
+}
+main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title .mobile {
+  display: none;
 }
 main .about-visual .swAboutVisual .swiper-slide .slide-img {
   width: 100%;
@@ -1172,8 +1178,8 @@ main .member-con .inner {
   padding-bottom: 12rem;
 }
 main .member-con .inner .member img {
-  height: 55rem;
   margin-bottom: 5rem;
+  width: 100%;
 }
 main .member-con .inner .member .title-wrap {
   margin-bottom: 3rem;
@@ -1272,12 +1278,55 @@ main .member-con .inner .member .info > * .info-list li {
     font-size: 1.8rem;
   }
 }
+main .member-con .inner .member .info .task {
+  margin-top: 2rem;
+}
 main .member-con .inner .member .info .task .info-list {
   grid-template-rows: repeat(3, 1fr);
 }
 main .member-con .inner .member .info .task .info-list li::before {
   content: "#";
   padding-right: 0.5rem;
+}
+@media (max-width: 768px) {
+  main .about-visual .swvisual-control .sw-page {
+    left: 3rem;
+    bottom: 35.5rem;
+  }
+  main .about-visual .swAboutVisual .swiper-slide .inner {
+    padding: 12rem 12rem 24rem;
+  }
+  main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+  }
+  main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title .mobile {
+    display: block;
+  }
+  main .team-con .inner .sub-title {
+    margin-bottom: 4rem;
+  }
+  main .team-con .inner .title-wrap .title {
+    margin-left: 6%;
+  }
+  main .team-con .inner .title-wrap .team-img {
+    top: 10rem;
+    background-position: center;
+  }
+  main .team-con .inner .text-wrap {
+    padding: 6rem 3rem 0 9rem;
+  }
+  main .member-con .inner {
+    grid-template-columns: 1fr;
+  }
+  main .member-con .inner .member .info > * .info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .member-con .inner .member .info > * .info-list li {
+    width: 100%;
+    align-self: flex-start;
+  }
 }
 
 /* 사업영역 스타일시트 */
