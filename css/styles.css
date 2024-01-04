@@ -36,7 +36,7 @@ span {
 html {
   font-size: 0.5208vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
     font-size: clamp(7.5px, 1.3021vw, 10px);
   }
@@ -77,7 +77,7 @@ header .inner {
   transition: transform 0.3s ease;
   --webkit-transform: all 0.3s ease;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .inner {
     padding: 1.8rem 3rem;
   }
@@ -181,7 +181,7 @@ header .menu-wrap .category li a {
   color: #333;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .menu-wrap .category li a {
     font-size: 3.6rem;
   }
@@ -216,7 +216,7 @@ header .menu-wrap .info-wrap .slogan h3 {
   letter-spacing: -0.048rem;
   margin-bottom: 3.8rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .menu-wrap .info-wrap .slogan h3 {
     font-size: 3.6rem;
   }
@@ -228,7 +228,7 @@ header .menu-wrap .info-wrap .slogan p {
   letter-spacing: -0.02rem;
   color: #888;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .menu-wrap .info-wrap .slogan p {
     font-size: 1.8rem;
   }
@@ -250,7 +250,7 @@ header .menu-wrap .info-wrap .info .company {
   line-height: 1.3;
   letter-spacing: -0.024rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .menu-wrap .info-wrap .info .company {
     font-size: 2rem;
   }
@@ -261,7 +261,7 @@ header .menu-wrap .info-wrap .info .contact {
   line-height: 1.4;
   letter-spacing: -0.028rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .menu-wrap .info-wrap .info .contact {
     font-size: 1.6rem;
   }
@@ -287,7 +287,7 @@ header .menu-wrap .info-wrap .info .sns_link a {
 header .menu-wrap .info-wrap .info .sns_link a:not(:last-child) {
   margin-right: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .menu {
     padding: 0 3rem;
   }
@@ -334,7 +334,7 @@ footer .company h4 {
   color: #fff;
   margin-bottom: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .company h4 {
     font-size: 3.6rem;
   }
@@ -346,7 +346,7 @@ footer .company span {
   line-height: 1.6;
   letter-spacing: -0.032rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .company span {
     font-size: 1.8rem;
   }
@@ -422,7 +422,7 @@ footer .info-wrap .info ul li {
   letter-spacing: -0.012rem;
   display: inline;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .info-wrap .info ul li {
     font-size: 1.4rem;
   }
@@ -451,7 +451,7 @@ footer .info-wrap .info.right .desc {
   display: inline;
   color: #888;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .info-wrap .info.right .desc {
     font-size: 1.4rem;
   }
@@ -476,12 +476,12 @@ footer .goTop span {
   letter-spacing: -0.012rem;
   color: #eeeef0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer .goTop span {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -564,7 +564,7 @@ main {
 main .inner {
   padding: 24rem 10rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .inner {
     padding: 12rem 3rem;
   }
@@ -610,7 +610,7 @@ main .main-visual .swvisual .swiper-slide .inner .swvisual-title .title {
   line-height: 1.2;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .main-visual .swvisual .swiper-slide .inner .swvisual-title .title {
     font-size: 8rem;
   }
@@ -656,7 +656,7 @@ main .main-visual .swvisual .swiper-slide .inner .swvisual-desc .desc {
   letter-spacing: -0.024rem;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .main-visual .swvisual .swiper-slide .inner .swvisual-desc .desc {
     font-size: 2rem;
   }
@@ -686,7 +686,7 @@ main .what .inner .title-wrap .title {
   line-height: 1.4;
   letter-spacing: -0.064rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .what .inner .title-wrap .title {
     font-size: 4.8rem;
   }
@@ -709,7 +709,7 @@ main .what .inner .item-wrap .item .item-title {
   letter-spacing: -0.036rem;
   margin-bottom: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .what .inner .item-wrap .item .item-title {
     font-size: 2.6rem;
   }
@@ -722,7 +722,7 @@ main .what .inner .item-wrap .item .item-desc {
   margin-bottom: 2rem;
   word-break: keep-all;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .what .inner .item-wrap .item .item-desc {
     font-size: 1.8rem;
   }
@@ -744,7 +744,7 @@ main .what .inner .item-wrap .item .item-tag li {
   border-bottom: 0.1rem solid #eeeef0;
   padding-left: 0.6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .what .inner .item-wrap .item .item-tag li {
     font-size: 1.8rem;
   }
@@ -772,7 +772,7 @@ main .slogan .inner .title {
   color: #fff;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .slogan .inner .title {
     font-size: 4.8rem;
   }
@@ -785,7 +785,7 @@ main .slogan .inner span {
   color: #fff;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .slogan .inner span {
     font-size: 1.8rem;
   }
@@ -800,7 +800,7 @@ main .partners .title {
   letter-spacing: -0.064rem;
   margin-bottom: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .partners .title {
     font-size: 4.8rem;
   }
@@ -811,7 +811,7 @@ main .partners .desc {
   line-height: 1.6;
   letter-spacing: -0.02rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .partners .desc {
     font-size: 1.8rem;
   }
@@ -830,7 +830,7 @@ main .partners .partners-logo .logo-item {
 main .partners .partners-logo .logo-item .logo-img {
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .main-visual .swvisual .swiper-slide .inner {
     padding: 12rem 3rem;
     flex-direction: column;
@@ -900,12 +900,12 @@ main .partners .partners-logo .logo-item .logo-img {
     letter-spacing: -0.048rem;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 767px) and (max-width: 767px) {
   main .slogan .inner .title {
     font-size: 3.6rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .partners .partners-logo {
     grid-template-columns: repeat(3, auto);
     gap: 1rem;
@@ -948,7 +948,7 @@ main .about-visual .swvisual-control .sw-page {
   width: -moz-max-content;
   width: max-content;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .about-visual .swvisual-control .sw-page {
     font-size: 1.8rem;
   }
@@ -987,7 +987,7 @@ main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
   letter-spacing: -0.064rem;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .about-visual .swAboutVisual .swiper-slide .inner .swvisual-title {
     font-size: 4.8rem;
   }
@@ -1042,7 +1042,7 @@ main .carousel-con > * .text-swiper .text-slide span {
   line-height: 1;
   font-weight: 800;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .carousel-con > * .text-swiper .text-slide span {
     font-size: 4.8rem;
   }
@@ -1124,7 +1124,7 @@ main .team-con .inner .sub-title {
   color: #1d68fd;
   margin-bottom: 5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .team-con .inner .sub-title {
     font-size: 2rem;
   }
@@ -1141,7 +1141,7 @@ main .team-con .inner .title-wrap .title {
   z-index: 1;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .team-con .inner .title-wrap .title {
     font-size: 4.8rem;
   }
@@ -1164,7 +1164,7 @@ main .team-con .inner .text-wrap {
   flex-direction: column;
   gap: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .team-con .inner .text-wrap {
     font-size: 1.8rem;
   }
@@ -1195,7 +1195,7 @@ main .member-con .inner .member .title-wrap .name {
   letter-spacing: -0.024rem;
   margin-bottom: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .member-con .inner .member .title-wrap .name {
     font-size: 2rem;
   }
@@ -1207,7 +1207,7 @@ main .member-con .inner .member .title-wrap .name strong {
   letter-spacing: -0.036rem;
   margin-right: 1.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .member-con .inner .member .title-wrap .name strong {
     font-size: 2.6rem;
   }
@@ -1219,7 +1219,7 @@ main .member-con .inner .member .title-wrap .rank {
   letter-spacing: -0.032rem;
   color: #888;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .member-con .inner .member .title-wrap .rank {
     font-size: 1.8rem;
   }
@@ -1231,7 +1231,7 @@ main .member-con .inner .member .desc {
   letter-spacing: -0.02rem;
   color: #444;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .member-con .inner .member .desc {
     font-size: 1.8rem;
   }
@@ -1254,7 +1254,7 @@ main .member-con .inner .member .info > * .info-title {
   font-weight: 700;
   line-height: 6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .member-con .inner .member .info > * .info-title {
     font-size: 1.8rem;
   }
@@ -1278,7 +1278,7 @@ main .member-con .inner .member .info > * .info-list li {
   align-items: center;
   word-break: keep-all;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .member-con .inner .member .info > * .info-list li {
     font-size: 1.8rem;
   }
@@ -1293,7 +1293,7 @@ main .member-con .inner .member .info .task .info-list li::before {
   content: "#";
   padding-right: 0.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .about-visual .swvisual-control .sw-page {
     left: 3rem;
     bottom: 35.5rem;
@@ -1371,7 +1371,7 @@ main .business-title .title {
   text-align: center;
   background-color: #f8f8fa;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .business-title .title {
     font-size: 4.8rem;
   }
@@ -1402,7 +1402,7 @@ main .business-title nav .business-link a {
   line-height: 8rem;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .business-title nav .business-link a {
     font-size: 1.8rem;
   }
@@ -1423,7 +1423,7 @@ main .reason-wrap .inner .mini-title {
   color: #1d68fd;
   margin-bottom: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .reason-wrap .inner .mini-title {
     font-size: 2rem;
   }
@@ -1438,7 +1438,7 @@ main .reason-wrap .inner .reason .title {
   letter-spacing: -0.064rem;
   margin-bottom: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .reason-wrap .inner .reason .title {
     font-size: 4.8rem;
   }
@@ -1453,12 +1453,13 @@ main .reason-wrap .inner .reason .desc {
   letter-spacing: -0.02rem;
   color: #444;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .reason-wrap .inner .reason .desc {
     font-size: 1.8rem;
   }
 }
 main .reason-wrap .inner .reason img {
+  width: 100%;
   margin-top: 12rem;
 }
 main .reason-wrap .inner #curriculum {
@@ -1476,7 +1477,7 @@ main .reason-wrap .inner #curriculum .desc-wrap .desc:first-child {
 main .reason-wrap .inner #curriculum img {
   margin-top: 6rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .business-title .title {
     padding: 20rem 0 4rem;
   }
@@ -1494,22 +1495,22 @@ main .reason-wrap .inner #curriculum img {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 767px) and (max-width: 767px) {
   main .reason-wrap .inner .reason .title {
     font-size: 4.8rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .reason-wrap .inner .reason .title br {
     display: block;
   }
 }
-@media (max-width: 768px) and (max-width: 420px) {
+@media (max-width: 767px) and (max-width: 420px) {
   main .reason-wrap .inner .reason .desc br {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .reason-wrap .inner .reason img {
     margin-top: 6rem;
   }
@@ -1551,7 +1552,7 @@ main .portfolio-title .title {
   padding: 24rem 0 4rem;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .portfolio-title .title {
     font-size: 4.8rem;
   }
@@ -1578,7 +1579,7 @@ main .portfolio-title ul.filter .filter-item {
   line-height: 8rem;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .portfolio-title ul.filter .filter-item {
     font-size: 1.8rem;
   }
@@ -1619,7 +1620,7 @@ main .portfolio-item-con .item .img-wrap::before {
   justify-content: center;
   background-color: rgba(51, 51, 51, 0.8);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .portfolio-item-con .item .img-wrap::before {
     font-size: 4.8rem;
   }
@@ -1636,7 +1637,7 @@ main .portfolio-item-con .item .item-title {
   padding-top: 3rem;
   padding-left: 0.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .portfolio-item-con .item .item-title {
     font-size: 1.8rem;
   }
@@ -1664,7 +1665,7 @@ main .info-con .title {
   line-height: 1.4;
   letter-spacing: -0.064rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .info-con .title {
     font-size: 4.8rem;
   }
@@ -1682,7 +1683,7 @@ main .info-con .desc-con .desc-title {
   line-height: 1.3;
   letter-spacing: -0.024rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .info-con .desc-con .desc-title {
     font-size: 2rem;
   }
@@ -1699,7 +1700,7 @@ main .info-con .desc-con .desc-wrap .core-work {
   padding-bottom: 3rem;
   margin-bottom: 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .info-con .desc-con .desc-wrap .core-work {
     font-size: 1.8rem;
   }
@@ -1714,7 +1715,7 @@ main .info-con .desc-con .desc-wrap .work-desc {
   letter-spacing: -0.02rem;
   word-break: keep-all;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .info-con .desc-con .desc-wrap .work-desc {
     font-size: 1.8rem;
   }
@@ -1730,7 +1731,7 @@ main .info-con .desc-con .desc-wrap .work-info ul {
   letter-spacing: -0.032rem;
   padding-right: 5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .info-con .desc-con .desc-wrap .work-info ul {
     font-size: 1.8rem;
   }
@@ -1780,7 +1781,7 @@ main .service-title .title {
   padding: 24rem 0 4rem;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .service-title .title {
     font-size: 4.8rem;
   }
@@ -1811,7 +1812,7 @@ main .service-title nav .service-link a {
   line-height: 8rem;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .service-title nav .service-link a {
     font-size: 1.8rem;
   }
@@ -1830,7 +1831,7 @@ main .process-con .inner .sub-title {
   letter-spacing: -0.024rem;
   color: #1d68fd;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .process-con .inner .sub-title {
     font-size: 2rem;
   }
@@ -1842,7 +1843,7 @@ main .process-con .inner .title {
   letter-spacing: -0.048rem;
   margin-bottom: 9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .process-con .inner .title {
     font-size: 3.6rem;
   }
@@ -1884,7 +1885,7 @@ main .process-con .inner .process .process-item .item-title sup {
   color: #1d68fd;
   margin-right: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .process-con .inner .process .process-item .item-title sup {
     font-size: 1.4rem;
   }
@@ -1896,7 +1897,7 @@ main .process-con .inner .process .process-item .item-title h4 {
   line-height: 1.3;
   letter-spacing: -0.024rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .process-con .inner .process .process-item .item-title h4 {
     font-size: 2rem;
   }
@@ -1910,7 +1911,7 @@ main .process-con .inner .process .process-item .item-desc {
   margin-left: 0.5rem;
   word-break: keep-all;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .process-con .inner .process .process-item .item-desc {
     font-size: 1.8rem;
   }
@@ -1927,7 +1928,7 @@ main .process-con .inner .caution li {
   letter-spacing: -0.032rem;
   color: #444;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .process-con .inner .caution li {
     font-size: 1.8rem;
   }
@@ -1948,7 +1949,7 @@ main .price-con .inner > .title {
   letter-spacing: -0.048rem;
   margin-bottom: 9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner > .title {
     font-size: 3.6rem;
   }
@@ -1959,7 +1960,7 @@ main .price-con .inner > .title small {
   line-height: 1.6;
   letter-spacing: -0.032rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner > .title small {
     font-size: 1.8rem;
   }
@@ -1984,7 +1985,7 @@ main .price-con .inner .table > * > *.head h4 {
   text-align: center;
   align-self: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table > * > *.head h4 {
     font-size: 1.8rem;
   }
@@ -1992,7 +1993,7 @@ main .price-con .inner .table > * > *.head h4 {
 main .price-con .inner .table > * > *.head h4 br {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table > * > *.head h4 br {
     display: block;
   }
@@ -2033,7 +2034,7 @@ main .price-con .inner .table > * > *.cell .service {
   display: flex;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table > * > *.cell .service {
     font-size: 1.8rem;
   }
@@ -2048,7 +2049,7 @@ main .price-con .inner .table .main-table .cell .title {
   letter-spacing: -0.02rem;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table .main-table .cell .title {
     font-size: 1.8rem;
   }
@@ -2060,7 +2061,7 @@ main .price-con .inner .table .main-table .cell .price {
   letter-spacing: -0.024rem;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table .main-table .cell .price {
     font-size: 2rem;
   }
@@ -2075,7 +2076,7 @@ main .price-con .inner .table .main-table .cell .note {
   flex-direction: column;
   justify-content: space-around;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table .main-table .cell .note {
     font-size: 1.6rem;
   }
@@ -2102,7 +2103,7 @@ main .price-con .inner .table .title {
   letter-spacing: -0.032rem;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table .title {
     font-size: 1.8rem;
   }
@@ -2114,7 +2115,7 @@ main .price-con .inner .table .price {
   letter-spacing: -0.032rem;
   font-weight: 700;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table .price {
     font-size: 1.8rem;
   }
@@ -2125,7 +2126,7 @@ main .price-con .inner .table .price small {
   line-height: 1.4;
   letter-spacing: -0.012rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .inner .table .price small {
     font-size: 1.4rem;
   }
@@ -2140,7 +2141,7 @@ main .price-con .caution li {
   letter-spacing: -0.032rem;
   color: #444;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .price-con .caution li {
     font-size: 1.8rem;
   }
@@ -2150,7 +2151,7 @@ main .price-con .caution li::before {
   color: #1d68fd;
   margin-right: 0.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .service-title .title {
     padding: 20rem 0 4rem;
   }
@@ -2227,7 +2228,7 @@ main .price-con .caution li::before {
   justify-content: center;
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #making-table {
     border-top: none;
   }
@@ -2250,12 +2251,12 @@ main .price-con .caution li::before {
     letter-spacing: -0.036rem;
   }
 }
-@media (max-width: 768px) and (max-width: 768px) {
+@media (max-width: 767px) and (max-width: 767px) {
   #making-table .sub-table .head h4 {
     font-size: 2.6rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #making-table .main-table,
   #making-table .sub-table {
     grid-template-rows: auto;
@@ -2329,7 +2330,7 @@ main .price-con .caution li::before {
   letter-spacing: -0.048rem;
   margin-bottom: 10rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner > .title {
     font-size: 3.6rem;
   }
@@ -2345,7 +2346,7 @@ main .price-con .caution li::before {
   font-size: 3.6rem;
   margin-bottom: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner .table-wrap > .title {
     font-size: 2rem;
   }
@@ -2371,7 +2372,7 @@ main .price-con .caution li::before {
   transition: all 0.3s ease;
   --webkit-transition: all 0.3s ease;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner .table-wrap .table .head h4 {
     font-size: 1.8rem;
   }
@@ -2416,7 +2417,7 @@ main .price-con .caution li::before {
   color: #444;
   padding: 1.5rem 6.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner .table-wrap .table .info .desc {
     font-size: 1.8rem;
   }
@@ -2435,7 +2436,7 @@ main .price-con .caution li::before {
   font-weight: 700;
   padding-left: 6.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner .table-wrap .table .info .cell .title {
     font-size: 1.8rem;
   }
@@ -2452,7 +2453,7 @@ main .price-con .caution li::before {
   border-left: 0.1rem solid #e6e6e3;
   height: inherit;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner .table-wrap .table .info .cell .desc {
     font-size: 1.8rem;
   }
@@ -2475,7 +2476,7 @@ main .price-con .caution li::before {
   line-height: 8rem;
   height: inherit;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner .table-wrap.table-middle .table-2 .cell .day {
     font-size: 1.8rem;
   }
@@ -2483,7 +2484,7 @@ main .price-con .caution li::before {
 .curri-con .inner .table-wrap.table-middle .table-2 .cell .day:not(.none) {
   border-bottom: 0.1rem solid #f8f8fa;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .curri-con .inner {
     padding: 12rem 3rem 0;
   }
@@ -2574,7 +2575,7 @@ main .price-con .caution li::before {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #consulting-table .main-table .price {
     flex-direction: column;
   }
@@ -2589,7 +2590,7 @@ main .price-con .caution li::before {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #consulting-table .sub-table .price {
     flex-direction: column;
   }
@@ -2619,7 +2620,7 @@ main .price-con .caution li::before {
   letter-spacing: -0.024rem;
   color: #1d68fd;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner .sub-title {
     font-size: 2rem;
   }
@@ -2631,7 +2632,7 @@ main .price-con .caution li::before {
   letter-spacing: -0.048rem;
   margin-bottom: 9rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner > .title {
     font-size: 3.6rem;
   }
@@ -2651,7 +2652,7 @@ main .price-con .caution li::before {
   padding: 0 2rem;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner .filter .filter-item {
     font-size: 1.8rem;
   }
@@ -2678,7 +2679,7 @@ main .price-con .caution li::before {
   color: #1d68fd;
   padding: 2.4rem 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner .faq-area .faq-item > * .type {
     font-size: 1.8rem;
   }
@@ -2696,7 +2697,7 @@ main .price-con .caution li::before {
   align-self: center;
   padding: 2.4rem 3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner .faq-area .faq-item .question .title {
     font-size: 1.8rem;
   }
@@ -2733,7 +2734,7 @@ main .price-con .caution li::before {
   letter-spacing: -0.032rem;
   align-self: flex-start;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner .faq-area .faq-item .answer .text-wrap {
     font-size: 1.8rem;
   }
@@ -2747,7 +2748,7 @@ main .price-con .caution li::before {
 .faq-con .inner .faq-area .faq-item .answer .text-wrap .sub-text {
   padding-top: 2.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .faq-con .inner {
     padding: 12rem 3rem;
   }

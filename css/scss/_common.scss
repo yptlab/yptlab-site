@@ -16,7 +16,11 @@ span {
 html {
   // font-size: 10px;
   font-size: 0.5208vw;
-  
+
+  // @include tablet {
+  //   // font-size: clamp(8px, 1vw, 10px);
+  //   font-size: 0.9766vw;
+  // }
   @include mobile {
     // font-size: 10px;
     font-size: clamp(7.5px, 1.3021vw, 10px);
