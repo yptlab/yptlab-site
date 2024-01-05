@@ -77,4 +77,41 @@ main {
       width: 100%;
     }
   }
+
+  @include mobile {
+    .info-con {
+      grid-template-columns: 1fr;
+      padding: 19rem 3rem 0;
+
+      .desc-con {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        margin-top: 6rem;
+
+        .desc-wrap {
+          .core-work {
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+          }
+
+          .work-info {
+            // flex-direction: column;
+          }
+        }
+      }
+    }
+
+    .img-con {
+      margin: 6rem 0 12rem;
+
+      .mockup {
+        margin-bottom: 6rem;
+      }
+
+      .more-img {
+        padding: 0 3rem;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }

@@ -1642,6 +1642,15 @@ main .portfolio-item-con .item .item-title {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 767px) {
+  main .portfolio-title .title {
+    padding: 20rem 0 4rem;
+  }
+  main .portfolio-item-con {
+    padding: 12rem 3rem;
+    grid-template-columns: 1fr;
+  }
+}
 
 /* 마진(margin) */
 /* 색상표 */
@@ -1755,6 +1764,31 @@ main .img-con .more-img {
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   width: 100%;
+}
+@media (max-width: 767px) {
+  main .info-con {
+    grid-template-columns: 1fr;
+    padding: 19rem 3rem 0;
+  }
+  main .info-con .desc-con {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    margin-top: 6rem;
+  }
+  main .info-con .desc-con .desc-wrap .core-work {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  main .img-con {
+    margin: 6rem 0 12rem;
+  }
+  main .img-con .mockup {
+    margin-bottom: 6rem;
+  }
+  main .img-con .more-img {
+    padding: 0 3rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* 서비스안내 스타일시트 */

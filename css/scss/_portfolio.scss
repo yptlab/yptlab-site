@@ -86,4 +86,18 @@ main {
       }
     }
   }
+
+  @include mobile {
+    .portfolio-title {
+      .title {
+        padding: 20rem 0 4rem;
+      }
+    }
+
+    .portfolio-item-con {
+      padding: calc($margin-height-large * 0.5) 3rem;
+
+      grid-template-columns: 1fr;
+    }
+  }
 }
