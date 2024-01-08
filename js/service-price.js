@@ -11,6 +11,7 @@ priceElem.forEach(elem => {
   return;
 })
 
-window.onresize = function(){
-  document.location.reload();
-};
+// window.onresize = function(){
+//   document.location.reload();
+// };
+
