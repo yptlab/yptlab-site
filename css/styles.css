@@ -397,8 +397,10 @@ footer .next a::after {
   transition: right 0.2s ease-in-out;
   --webkit-transition: right 0.2s ease-in-out;
 }
-footer .next:hover a::after {
-  right: -70%;
+@media screen and (min-width: 769px) {
+  footer .next:hover a::after {
+    right: -70%;
+  }
 }
 footer .info-wrap {
   grid-column: 1/3;
@@ -508,6 +510,7 @@ footer .goTop span {
     width: 10rem;
     height: 10rem;
     top: 22%;
+    right: -48%;
   }
   footer .info-wrap {
     order: 2;
@@ -1779,6 +1782,9 @@ main .img-con .more-img {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
   }
+  main .info-con .desc-con .desc-wrap .work-info ul {
+    padding-right: 3rem;
+  }
   main .img-con {
     margin: 6rem 0 12rem;
   }
@@ -2024,11 +2030,19 @@ main .price-con .inner .table > * > *.head h4 {
     font-size: 1.8rem;
   }
 }
-main .price-con .inner .table > * > *.head h4 br {
-  display: none;
+main .price-con .inner .table > * > *.head h4 small {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.012rem;
 }
 @media (max-width: 767px) {
-  main .price-con .inner .table > * > *.head h4 br {
+  main .price-con .inner .table > * > *.head h4 small {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  main .price-con .inner .table > * > *.head h4 small {
     display: block;
   }
 }
@@ -2129,6 +2143,9 @@ main .price-con .inner .table .main-table .cell .note .recommend li img {
 main .price-con .inner .table .sub-table {
   display: grid;
   grid-column: 1/6 !important;
+}
+main .price-con .inner .table .sub-table .head {
+  white-space: nowrap;
 }
 main .price-con .inner .table .title {
   font-size: 1.6rem;
@@ -2561,6 +2578,11 @@ main .price-con .caution li::before {
 #lecture-table > * > * {
   grid-template-columns: 1fr repeat(4, 1.4fr);
 }
+@media (max-width: 767px) {
+  #lecture-table > * > * {
+    grid-template-columns: 1fr repeat(3, 1.4fr);
+  }
+}
 #lecture-table .main-table {
   grid-template-rows: auto repeat(2, 16rem);
 }
@@ -2570,6 +2592,11 @@ main .price-con .caution li::before {
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  #lecture-table .main-table .service {
+    display: none;
+  }
 }
 #lecture-table .sub-table {
   grid-template-rows: auto repeat(3, 12rem);
@@ -2597,7 +2624,7 @@ main .price-con .caution li::before {
 /* 트랜지션(transition) */
 /* 폰트 스타일(size, weight, line-height...) */
 #consulting-table > * > * {
-  grid-template-columns: 1fr repeat(4, 1.4fr);
+  grid-template-columns: 20% repeat(4, 1.4fr);
 }
 #consulting-table .main-table {
   grid-template-rows: auto repeat(3, 16rem);

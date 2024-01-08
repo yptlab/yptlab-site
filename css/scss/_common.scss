@@ -383,9 +383,11 @@ footer {
         --webkit-transition: right 0.2s ease-in-out;
       }
     }
-    &:hover {
-      a::after {
-        right: -70%;
+    @media screen and (min-width : 769px ) {
+      &:hover {
+        a::after {
+          right: -70%;
+        }
       }
     }
   }
@@ -485,6 +487,7 @@ footer {
           width: 10rem;
           height: 10rem;
           top: 22%;
+          right: -48%;
         }
       }
     }
