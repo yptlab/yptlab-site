@@ -203,7 +203,7 @@
     grid-template-columns: 1fr repeat(4, 1.4fr);
     
     @include mobile {
-      // grid-template-columns: 5.5rem repeat(4, 1.4fr);
+      grid-template-columns: 1fr repeat(3, 1.4fr);
     }
   }
   .main-table {
@@ -214,6 +214,12 @@
       height: 100%;
       align-items: center;
       justify-content: center;
+    }
+
+    .service {
+      @include mobile {
+          display: none;
+      }
     }
   }
   .sub-table {

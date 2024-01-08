@@ -157,8 +157,8 @@ main {
               text-align: center;
               align-self: center;
 
-              br {
-                display: none;
+              small {
+                @include caption-text;
 
                 @include mobile {
                   display: block;
@@ -247,6 +247,10 @@ main {
         .sub-table {
           display: grid;
           grid-column: 1 / 6 !important;
+
+          .head {
+            white-space: nowrap;
+          }
         }
         .title {
           @include text-md;
