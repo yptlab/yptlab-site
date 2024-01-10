@@ -1,5 +1,5 @@
-const mobile = window.matchMedia('(max-width: 768px)').matches;
-const desktop = window.matchMedia('(min-width: 1024px)').matches;
+const mobile = window.matchMedia('screen and (max-width: 768px)').matches;
+const desktop = window.matchMedia('screen and (min-width: 1024px)').matches;
 let priceElem = document.querySelectorAll('.price');
 
 // 단위 변경 후, 콤마 삭제 
@@ -14,4 +14,3 @@ priceElem.forEach(elem => {
 // window.onresize = function(){
 //   document.location.reload();
 // };
-

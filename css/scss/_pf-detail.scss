@@ -7,6 +7,7 @@ main {
     display: grid;
     grid-template-columns: 5fr 7fr;
     padding: 19rem $margin-width-large 0;
+    column-gap: 9rem;
     
     .title {
       @include title-md;
@@ -75,6 +76,10 @@ main {
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
       width: 100%;
+
+      img {
+        border: .1rem solid $gray-100-color;
+      }
     }
   }
 
