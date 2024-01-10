@@ -1599,11 +1599,18 @@ main .portfolio-item-con {
        column-gap: 3rem;
   row-gap: 4rem;
 }
+main .portfolio-item-con .item {
+  display: block;
+}
+main .portfolio-item-con .item.active {
+  display: none;
+}
 main .portfolio-item-con .item .img-wrap {
+  display: block;
   position: relative;
   cursor: pointer;
-  display: block;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  padding-bottom: 56%;
 }
 main .portfolio-item-con .item .img-wrap::before {
   font-size: 6.4rem;
@@ -1630,6 +1637,16 @@ main .portfolio-item-con .item .img-wrap::before {
 }
 main .portfolio-item-con .item .img-wrap:hover::before {
   display: flex;
+}
+main .portfolio-item-con .item .img-wrap .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
 }
 main .portfolio-item-con .item .item-title {
   font-size: 2rem;
@@ -1670,6 +1687,8 @@ main .info-con {
   display: grid;
   grid-template-columns: 5fr 7fr;
   padding: 19rem 10rem 0;
+  -moz-column-gap: 9rem;
+       column-gap: 9rem;
 }
 main .info-con .title {
   font-size: 6.4rem;
@@ -1767,6 +1786,9 @@ main .img-con .more-img {
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   width: 100%;
+}
+main .img-con .more-img img {
+  border: 0.1rem solid #f8f8fa;
 }
 @media (max-width: 767px) {
   main .info-con {
