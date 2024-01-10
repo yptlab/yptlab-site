@@ -1577,10 +1577,12 @@ main .portfolio-title ul.filter .filter-item {
   line-height: 1.6;
   letter-spacing: -0.02rem;
   color: #888;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  line-height: 8rem;
   cursor: pointer;
+  word-break: keep-all;
 }
 @media (max-width: 767px) {
   main .portfolio-title ul.filter .filter-item {

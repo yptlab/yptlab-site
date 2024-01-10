@@ -28,11 +28,13 @@ main {
 
         @include text-lg;
         color: $gray-600-color;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        line-height: 8rem;
         cursor: pointer;
-
+        word-break: keep-all;
+        
         &:hover,
         &.active {
           font-weight: 700;
