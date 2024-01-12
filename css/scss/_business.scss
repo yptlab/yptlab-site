@@ -55,6 +55,7 @@ main {
         @include title-2xs;
         color: $primary-color;
         margin-bottom: 3rem;
+        word-break: keep-all;
       }
 
       .reason {
@@ -64,6 +65,7 @@ main {
         .title {
           @include title-md;
           margin-bottom: 3rem;
+          word-break: keep-all;
           
           br {
             display: none;
@@ -72,6 +74,7 @@ main {
         .desc {
           @include text-lg;
           color: $gray-800-color;
+          word-break: keep-all;
         }
 
         img {

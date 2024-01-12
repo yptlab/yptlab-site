@@ -70,6 +70,7 @@ main {
     .mockup {
       margin-bottom: $margin-width-large;
       width: 100%;
+      border: .1rem solid $gray-100-color;
     }
     .more-img {
       display: grid;
@@ -102,7 +103,11 @@ main {
           .work-info {
             // flex-direction: column;
             ul {
-              padding-right: 3rem;
+              padding-right: 2rem;
+
+              &:not(:first-child) {
+                padding-left: 2rem;
+              }
             }
           }
         }

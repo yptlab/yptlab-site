@@ -76,7 +76,7 @@ main {
 
               &.line-1 {
                 width: 21.4rem;
-                right: 4%;
+                right: 24%;
                 bottom: 45%;
               }
 
@@ -98,6 +98,7 @@ main {
             .desc {
               @include text-xl;
               color: $white-color;
+              word-break: keep-all;
             }
           }
         }
@@ -208,6 +209,7 @@ main {
     }
     .desc {
       @include text-lg;
+      word-break: keep-all;
     }
 
     .partners-logo {
@@ -322,6 +324,7 @@ main {
 
       .inner {
         row-gap: 4rem;
+        word-break: keep-all;
 
         .title {
           @include title-sm;
