@@ -636,7 +636,7 @@ main .main-visual .swvisual .swiper-slide .inner .swvisual-title .line {
 }
 main .main-visual .swvisual .swiper-slide .inner .swvisual-title .line.line-1 {
   width: 21.4rem;
-  right: 4%;
+  right: 24%;
   bottom: 45%;
 }
 main .main-visual .swvisual .swiper-slide .inner .swvisual-title .line.line-2 {
@@ -658,6 +658,7 @@ main .main-visual .swvisual .swiper-slide .inner .swvisual-desc .desc {
   line-height: 1.6;
   letter-spacing: -0.024rem;
   color: #fff;
+  word-break: keep-all;
 }
 @media (max-width: 767px) {
   main .main-visual .swvisual .swiper-slide .inner .swvisual-desc .desc {
@@ -813,6 +814,7 @@ main .partners .desc {
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.02rem;
+  word-break: keep-all;
 }
 @media (max-width: 767px) {
   main .partners .desc {
@@ -895,6 +897,7 @@ main .partners .partners-logo .logo-item .logo-img {
   }
   main .slogan .inner {
     row-gap: 4rem;
+    word-break: keep-all;
   }
   main .slogan .inner .title {
     font-size: 4.8rem;
@@ -1425,6 +1428,7 @@ main .reason-wrap .inner .mini-title {
   letter-spacing: -0.024rem;
   color: #1d68fd;
   margin-bottom: 3rem;
+  word-break: keep-all;
 }
 @media (max-width: 767px) {
   main .reason-wrap .inner .mini-title {
@@ -1440,6 +1444,7 @@ main .reason-wrap .inner .reason .title {
   line-height: 1.4;
   letter-spacing: -0.064rem;
   margin-bottom: 3rem;
+  word-break: keep-all;
 }
 @media (max-width: 767px) {
   main .reason-wrap .inner .reason .title {
@@ -1455,6 +1460,7 @@ main .reason-wrap .inner .reason .desc {
   line-height: 1.6;
   letter-spacing: -0.02rem;
   color: #444;
+  word-break: keep-all;
 }
 @media (max-width: 767px) {
   main .reason-wrap .inner .reason .desc {
@@ -1782,6 +1788,7 @@ main .img-con {
 main .img-con .mockup {
   margin-bottom: 10rem;
   width: 100%;
+  border: 0.1rem solid #f8f8fa;
 }
 main .img-con .more-img {
   display: grid;
@@ -1807,7 +1814,10 @@ main .img-con .more-img img {
     margin-bottom: 2rem;
   }
   main .info-con .desc-con .desc-wrap .work-info ul {
-    padding-right: 3rem;
+    padding-right: 2rem;
+  }
+  main .info-con .desc-con .desc-wrap .work-info ul:not(:first-child) {
+    padding-left: 2rem;
   }
   main .img-con {
     margin: 6rem 0 12rem;
